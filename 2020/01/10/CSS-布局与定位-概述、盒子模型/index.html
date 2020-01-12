@@ -6,15 +6,28 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 随笔 | 木玉青的博客</title>
+  <title>CSS-布局与定位-概述、盒子模型 | 木玉青的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="木玉青的博客">
-<meta property="og:url" content="http://yoursite.com/tags/%E9%9A%8F%E7%AC%94/index.html">
+  <meta name="description" content="继续上一章学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS-布局与定位-概述、盒子模型">
+<meta property="og:url" content="http://yoursite.com/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/index.html">
 <meta property="og:site_name" content="木玉青的博客">
+<meta property="og:description" content="继续上一章学习">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/%E7%9B%92%E5%AD%90.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E5%AD%90%E5%B1%9E%E6%80%A7.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/%E7%A9%BA%E9%97%B4%E5%A4%A7%E5%B0%8F.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/%E4%BE%8B%E5%AD%901.png">
+<meta property="og:image" content="http://yoursite.com/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/%E4%BE%8B%E5%AD%902.png">
+<meta property="article:published_time" content="2020-01-10T02:20:43.000Z">
+<meta property="article:modified_time" content="2020-01-12T13:27:38.393Z">
 <meta property="article:author" content="木玉青">
+<meta property="article:tag" content="入门">
+<meta property="article:tag" content="CSS布局与定位">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/%E7%9B%92%E5%AD%90.png">
   
     <link rel="alternative" href="/atom.xml" title="木玉青的博客" type="application/atom+xml">
   
@@ -158,60 +171,291 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-CSS-布局与定位-概述、盒子模型" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87/" class="archive-article-date">
-  	<time datetime="2020-01-03T14:24:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-03</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/03/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      CSS-布局与定位-概述、盒子模型
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/" class="archive-article-date">
+  	<time datetime="2020-01-10T02:20:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-10</time>
+</a>
+            
+    
+        
+          <span class="archive-article-date">
+              阅读量 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        	
+		
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>继续上一章学习</p>
+<a id="more"></a>
+
+<h2 id="三、CSS布局与定位"><a href="#三、CSS布局与定位" class="headerlink" title="三、CSS布局与定位"></a>三、CSS布局与定位</h2><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><blockquote>
+<img src="/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/盒子.png" alt="盒子" style="zoom:60%;">
+</blockquote>
+<h2 id="盒子"><a href="#盒子" class="headerlink" title="盒子"></a>盒子</h2><blockquote>
+<img src="/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/盒子模型.png" alt="盒子模型" style="zoom:55%;">
+
+<hr>
+<ul>
+<li>盒子模型子属性</li>
+</ul>
+<img src="/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/盒子模型子属性.png" alt="盒子模型子属性" style="zoom:100%;">
+
+<hr>
+<ul>
+<li>盒子占据的空间大小</li>
+</ul>
+<img src="/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/空间大小.png" alt="空间大小" style="zoom:65%;">
+
+<hr>
+<ul>
+<li>看个例子</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"box"</span>&gt;</span></span><br><span class="line">		hello world!hello world!</span><br><span class="line">		hello world!hello world!</span><br><span class="line">		hello world!hello world!</span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<ul>
+<li>溢出边界 <code>overflow</code></li>
+</ul>
+<p><code>hidden</code>：超出部分不可见<br><code>scroll</code>：显示滚动条<br><code>auto</code>：如果有超出部分，显示滚动条</p>
+<hr>
+<ul>
+<li>边框、水平分割线<code>border</code></li>
+</ul>
+<p>边框宽度 <code>border-width</code>： <code>px</code>、<code>thin</code>、<code>medium</code>、<code>thick</code><br>边框样式<code>border-style</code>：<code>dashed</code>横线、<code>dotted</code>点、<code>solid</code>实线、<code>double</code>双实线<br>边框颜色 <code>border-color</code><br><code>border：width style color</code></p>
+<ul>
+<li>举个例子——制作水平分割线</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.line</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">1px</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">500px</span>;</span><br><span class="line">    <span class="attribute">border-top</span>: <span class="number">1px</span> solid <span class="number">#e5e5e5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<ul>
+<li>对浏览器默认的设置清零</li>
+</ul>
+<p>浏览器会对盒子模型设定一个默认的值，值包括字体、字号、margin属性值和padding属性值。因此为了正确的布局，需要对浏览器的默认属性值清零：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>内边距<code>padding</code></li>
+</ul>
+<p>样例：<br><code>padding: 5px 1px 2px 3px;</code>上 -&gt; 右 -&gt; 下 -&gt; 左<br><code>padding-top: 10%</code><br><code>padding-left: ;</code><br><code>padding-right: ;</code><br><code>padding-bottom: ;</code></p>
+<ul>
+<li>外边距<code>margin</code></li>
+</ul>
+<p>样例：<br><code>margin: 5px 4px;</code>上下 -&gt; 左右<br><code>margin-top: 10%;</code><br><code>margin-left: ;</code><br><code>margin-right: ;</code><br><code>margin-bottom: ;</code></p>
+<hr>
+<ul>
+<li>上个例子</li>
+</ul>
+<img src="/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/例子1.png" alt="例子1" style="zoom:80%;">
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">15px</span> <span class="number">10px</span> <span class="number">20px</span> <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"box1"</span>&gt;</span>box 1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"box2"</span>&gt;</span>box 2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<ul>
+<li>特性：</li>
+</ul>
+<p>（1）每个div做出的盒子 都自带换行效果，自己占一行；</p>
+<p>（2）垂直方向上外边距会自动合并，并不是上面盒子的外边距（下）加上下面盒子的外边距（上），合并的结果取MAX。水平方向不合并。</p>
+<p>（3）margin可以设定盒子的水平居中：<br>图片、文字：text-align: center;<br>div: margin: 0 auto;（也就是左右自动计算）</p>
+<hr>
+<ul>
+<li>再上个例子</li>
+</ul>
+<img src="/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/例子2.png" alt="例子2" style="zoom:50%;">
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#newsimglist</span> &#123;</span><br><span class="line">    <span class="attribute">text-align</span>: center;</span><br><span class="line">    <span class="attribute">font-stze</span>: <span class="number">0</span>;<span class="comment">/*去掉浏览器默认的字体留白样式*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#newsimglist</span> <span class="selector-tag">img</span> &#123;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">margin-left</span>: <span class="number">5px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#0cf</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">5px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">入门</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS布局与定位</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/前端/CSS//" class="article-tag-list-link color4">CSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/10/CSS-%E5%B8%83%E5%B1%80%E4%B8%8E%E5%AE%9A%E4%BD%8D-%E6%A6%82%E8%BF%B0%E3%80%81%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/01/08/CSS-%E6%A0%B7%E5%BC%8F-%E5%88%97%E8%A1%A8%E3%80%81%E8%A1%A8%E6%A0%BC/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS-样式-列表、表格</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#三、CSS布局与定位"><span class="toc-number">1.</span> <span class="toc-text">三、CSS布局与定位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#概述"><span class="toc-number">2.</span> <span class="toc-text">概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#盒子"><span class="toc-number">3.</span> <span class="toc-text">盒子</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
+  
+  
+      <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+<script>
+var gitalk = new Gitalk({
+  clientID: 'your clientID',
+  clientSecret: 'your clientSecret',
+  repo: 'git_comment',
+  owner: 'findtheonlyway',
+  admin: ['erbiduo'],
+  id: md5(window.location.pathname),
+  distractionFreeMode: true
+})
+
+gitalk.render('gitalk-container')
+</script>
+
+  
+  
 
 
           </div>
@@ -262,9 +506,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
