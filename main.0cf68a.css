@@ -759,7 +759,7 @@ body {
   position: absolute;
   right: 0;
   min-height: 100%;
-  background: #eaeaea;
+  background: #000000;
   left: 300px;
   width: auto
 }
@@ -2111,21 +2111,21 @@ pre .css~* .id, pre .id {
   padding-top: 20px;
   margin: 30px 7.6923% 0;
   min-height: 72px;
-  border-top: 1px solid #ddd
+  border-top: 1px solid #ddd;
 }
 
 .article-info-post.article-info {
   padding: 0;
   border: none;
-  margin: -30px 0 20px 7.6923%
+  margin: -30px 0 20px 7.6923%;
 }
 
 .article-inner p {
-  margin: 0 0 1.75em
+  margin: 0 0 1.75em;
 }
 
 .article-inner {
-  border-color: #d1d1d1
+  border-color: #d1d1d1;
 }
 
 .article-inner h1 {
@@ -2133,7 +2133,7 @@ pre .css~* .id, pre .id {
   font-size: 1.75rem;
   line-height: 1.25;
   margin-top: 2em;
-  margin-bottom: 1em
+  margin-bottom: 1em;
 }
 
 .article-inner h2 {
@@ -2141,7 +2141,7 @@ pre .css~* .id, pre .id {
   font-size: 1.4375rem;
   line-height: 1.2173913043;
   margin-top: 2.4347826087em;
-  margin-bottom: 1.2173913043em
+  margin-bottom: 1.2173913043em;
 }
 
 .article-inner h3 {
@@ -2149,7 +2149,7 @@ pre .css~* .id, pre .id {
   font-size: 1.1875rem;
   line-height: 1.1052631579;
   margin-top: 2.9473684211em;
-  margin-bottom: 1.4736842105em
+  margin-bottom: 1.4736842105em;
 }
 
 .article-inner h4, .article-inner h5, .article-inner h6 {
@@ -2157,35 +2157,35 @@ pre .css~* .id, pre .id {
   font-size: 1rem;
   line-height: 1.3125;
   margin-top: 3.5em;
-  margin-bottom: 1.75em
+  margin-bottom: 1.75em;
 }
 
 .article-inner h4 {
   letter-spacing: .140625em;
-  text-transform: uppercase
+  text-transform: uppercase;
 }
 
 .article-inner h6 {
-  font-style: italic
+  font-style: italic;
 }
 
 .article-inner h1, .article-inner h2, .article-inner h3, .article-inner h4, .article-inner h5, .article-inner h6 {
-  font-weight: 900
+  font-weight: 900;
 }
 
 .article-inner h1:first-child, .article-inner h2:first-child, .article-inner h3:first-child, .article-inner h4:first-child, .article-inner h5:first-child, .article-inner h6:first-child {
-  margin-top: 0
+  margin-top: 0;
 }
 
 .article-inner h1:first-child {
   margin-bottom: 10px;
-  display: inline
+  display: inline;
 }
 
 .article-entry {
   line-height: 1.8em;
   padding-right: 7.6923%;
-  padding-left: 7.6923%
+  padding-left: 7.6923%;
 }
 
 .article-entry p {
@@ -5258,4 +5258,16 @@ a.gitment-editor-footer-tip:hover {
 
 .gitment-markdown hr {
   border-bottom-color: #eee;
+}
+
+#timeDate {
+  font-size: 8px;
+}
+
+#times {
+  font-size: 8px;
+}
+
+#wenzhangshu {
+  font-size: 8px;
 }
