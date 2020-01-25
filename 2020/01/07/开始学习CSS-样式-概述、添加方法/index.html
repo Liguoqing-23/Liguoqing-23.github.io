@@ -80,6 +80,11 @@
 	        
 			</ul>
 		</nav>
+		
+		<nav>
+			总文章数 18
+		</nav>
+		
 		<nav class="header-smart-menu">
     		
     			
@@ -326,7 +331,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/01/07/%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0CSS-%E6%A0%B7%E5%BC%8F-%E6%A6%82%E8%BF%B0%E3%80%81%E6%B7%BB%E5%8A%A0%E6%96%B9%E6%B3%95/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/01/07/%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0CSS-%E6%A0%B7%E5%BC%8F-%E6%A6%82%E8%BF%B0%E3%80%81%E6%B7%BB%E5%8A%A0%E6%96%B9%E6%B3%95/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -398,28 +403,26 @@
   
 
   
-  
-  
-      <div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+  <div id="gitment-ctn"></div> 
+
+<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
+<script src="https://www.wenjunjiang.win/js/gitment.js"></script>
 
 <script>
-var gitalk = new Gitalk({
-  clientID: 'your clientID',
-  clientSecret: 'your clientSecret',
-  repo: 'git_comment',
-  owner: 'findtheonlyway',
-  admin: ['erbiduo'],
-  id: md5(window.location.pathname),
-  distractionFreeMode: true
+var gitment = new Gitment({
+  id: "http://yoursite.com/2020/01/07/%E5%BC%80%E5%A7%8B%E5%AD%A6%E4%B9%A0CSS-%E6%A0%B7%E5%BC%8F-%E6%A6%82%E8%BF%B0%E3%80%81%E6%B7%BB%E5%8A%A0%E6%96%B9%E6%B3%95/",
+  owner: 'liguoqing-23',
+  repo: 'liguoqing-23.github.io',
+  oauth: {
+    client_id: '7f29283e8aba166934d8',
+    client_secret: '9a9a8a106614da83a64267d2b18e20ee2071d498',
+  },
 })
-
-gitalk.render('gitalk-container')
+gitment.render('gitment-ctn')
 </script>
-
   
+
+	
   
 
 
@@ -535,14 +538,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">入门</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">CSS3</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">算法竞赛</a>
               </li>
              
@@ -551,11 +546,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">入门</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">CSS3</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">CSS布局与定位</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">CSS样式</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">CSS参考手册</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">HTML参考手册</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -568,14 +579,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">变长数组</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">HTML参考手册</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">CSS参考手册</a>
               </li>
              
               <li class="article-tag-list-item">
