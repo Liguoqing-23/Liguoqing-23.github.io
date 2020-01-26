@@ -1,3 +1,6 @@
+* {
+  color: silver !important;
+}
 .clearfix:after, .clearfix:before {
   content: "";
   display: table
@@ -278,7 +281,7 @@ body {
   font-size: 14px;
   font-family: Helvetica Neue, Helvetica, STHeiTi, Arial, sans-serif;
   line-height: 1.5;
-  color: #333;
+  color: #ffffff;
   background-color: #fff;
   min-height: 100%
 }
@@ -774,7 +777,7 @@ body {
 }
 
 .left-col {
-  background: #fff;
+  background: rgb(24, 24, 24);
   width: 300px;
   position: fixed;
   opacity: 1;
@@ -916,12 +919,12 @@ body {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, .2)
+  background-color: rgba(0, 0, 0, 0.9)
 }
 
 ::-webkit-scrollbar-thumb:hover {
   border-radius: 8px;
-  background-color: rgba(0, 0, 0, .5)
+  background-color: rgba(0, 0, 0, 0.5)
 }
 
 ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
@@ -2031,18 +2034,47 @@ pre .css~* .id, pre .id {
 .article {
   margin: 30px;
   position: relative;
-  border: 1px solid #ddd;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
+  border: 1px solid rgb(48, 48, 48);
+  border-top: 1px solid rgb(48, 48, 48);
+  border-bottom: 1px solid rgb(48, 48, 48);
+  background: rgb(24,24,24);
+  transition: all .2s ease-in;
+}
+;
+.article:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
   background: #fff;
-  transition: all .2s ease-in
+  z-index: -1;
+}
+
+.article:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  /* 滤镜属性  给图像设置高斯模糊。"radius"一值设定高斯函数的标准差，或者是屏幕上以多少像素融在一起，所以值越大越模糊；如果没有设定值，则默认是0；这个参数可设置css长度值，但不接受百分比值。 */
+  filter: blur(40px);
+}
+
+.article:before, .article:after {
+  /* linear-gradient() 函数用于创建一个线性渐变的 "图像"。 参数1:用角度值指定渐变的方向（或角度）  12点钟方向为0deg*/
+  background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
 }
 
 .article img {
   max-width: 100%
 }
 
-.article-inner h1.article-title, .article-title {
+.article h1.article-title, .article-title {
   color: #696969;
   margin-left: 0;
   font-weight: 300;
@@ -2125,36 +2157,7 @@ pre .css~* .id, pre .id {
 }
 
 .article-inner {
-  border-color: #060c21;
-}
-
-.article-inner::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: #fff;
-  z-index: -1;
-}
-
-.article-inner::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: #fff;
-  z-index: -2;
-  /* 滤镜属性  给图像设置高斯模糊。"radius"一值设定高斯函数的标准差，或者是屏幕上以多少像素融在一起，所以值越大越模糊；如果没有设定值，则默认是0；这个参数可设置css长度值，但不接受百分比值。 */
-  filter: blur(40px);
-}
-
-.article-inner::before, .article-inner::after {
-  /* linear-gradient() 函数用于创建一个线性渐变的 "图像"。 参数1:用角度值指定渐变的方向（或角度）  12点钟方向为0deg*/
-  background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+  border-color: #fff;
 }
 
 .article-inner h1 {
@@ -2307,9 +2310,11 @@ pre .css~* .id, pre .id {
   padding-bottom: 5px;
   /* border-bottom: 1px solid #ddd */
 }
+
 .article-entry h2 {
   border-bottom: 1px solid rgb(124, 3, 3);
 }
+
 .article-entry h3 {
   border-bottom: 1px dotted rgb(138, 137, 137);
 }
@@ -4083,63 +4088,121 @@ category-all-page {
 }
 
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
+
 /*  */
 
 .gitment-container {
@@ -4158,8 +4221,7 @@ category-all-page {
   cursor: not-allowed;
 }
 
-.gitment-container a,
-.gitment-container a:visited {
+.gitment-container a, .gitment-container a:visited {
   cursor: pointer;
   text-decoration: none;
 }
@@ -4174,7 +4236,6 @@ category-all-page {
 
 .gitment-container .gitment-spinner-icon {
   fill: #333;
-
   -webkit-animation: gitment-spin 1s steps(12) infinite;
   animation: gitment-spin 1s steps(12) infinite;
 }
@@ -4201,8 +4262,7 @@ category-all-page {
   margin: 19px 0;
 }
 
-.gitment-header-like-btn,
-.gitment-comment-like-btn {
+.gitment-header-like-btn, .gitment-comment-like-btn {
   cursor: pointer;
 }
 
@@ -4224,13 +4284,11 @@ category-all-page {
   height: 20px;
 }
 
-.gitment-header-like-btn.liked svg,
-.gitment-comment-like-btn.liked svg {
+.gitment-header-like-btn.liked svg, .gitment-comment-like-btn.liked svg {
   fill: #F44336;
 }
 
-a.gitment-header-issue-link,
-a.gitment-header-issue-link:visited {
+a.gitment-header-issue-link, a.gitment-header-issue-link:visited {
   float: right;
   line-height: 30px;
   color: #666;
@@ -4240,9 +4298,7 @@ a.gitment-header-issue-link:hover {
   color: #666;
 }
 
-.gitment-comments-loading,
-.gitment-comments-error,
-.gitment-comments-empty {
+.gitment-comments-loading, .gitment-comments-error, .gitment-comments-empty {
   text-align: center;
   margin: 50px 0;
 }
@@ -4253,25 +4309,19 @@ a.gitment-header-issue-link:hover {
   margin: 0 0 38px;
 }
 
-.gitment-comment,
-.gitment-editor-container {
+.gitment-comment, .gitment-editor-container {
   position: relative;
   min-height: 60px;
   padding-left: 60px;
   margin: 19px 0;
 }
 
-.gitment-comment-avatar,
-.gitment-editor-avatar {
+.gitment-comment-avatar, .gitment-editor-avatar {
   float: left;
   margin-left: -60px;
 }
 
-.gitment-comment-avatar,
-.gitment-comment-avatar-img,
-.gitment-comment-avatar,
-.gitment-editor-avatar-img,
-.gitment-editor-avatar svg {
+.gitment-comment-avatar, .gitment-comment-avatar-img, .gitment-comment-avatar, .gitment-editor-avatar-img, .gitment-editor-avatar svg {
   width: 44px;
   height: 44px;
   border-radius: 3px;
@@ -4282,17 +4332,17 @@ a.gitment-header-issue-link:hover {
   background-color: #333;
 }
 
-.gitment-comment-main,
-.gitment-editor-main {
+.gitment-comment-main, .gitment-editor-main {
   position: relative;
   border: 1px solid #CFD8DC;
   border-radius: 0;
 }
 
-.gitment-editor-main::before,
-.gitment-editor-main::after,
-.gitment-comment-main::before,
-.gitment-comment-main::after {
+.gitment-comment-main {
+  background-color: rgb(24, 24, 24);
+}
+
+.gitment-editor-main::before, .gitment-editor-main::after, .gitment-comment-main::before, .gitment-comment-main::after {
   position: absolute;
   top: 11px;
   left: -16px;
@@ -4305,14 +4355,12 @@ a.gitment-header-issue-link:hover {
   border-style: solid solid outset;
 }
 
-.gitment-editor-main::before,
-.gitment-comment-main::before {
+.gitment-editor-main::before, .gitment-comment-main::before {
   border-width: 8px;
   border-right-color: #CFD8DC;
 }
 
-.gitment-editor-main::after,
-.gitment-comment-main::after {
+.gitment-editor-main::after, .gitment-comment-main::after {
   margin-top: 1px;
   margin-left: 2px;
   border-width: 7px;
@@ -4332,8 +4380,7 @@ a.gitment-header-issue-link:hover {
   border-bottom: 1px solid #CFD8DC;
 }
 
-a.gitment-comment-name,
-a.gitment-comment-name:visited {
+a.gitment-comment-name, a.gitment-comment-name:visited {
   font-weight: 600;
   color: #666;
 }
@@ -4355,11 +4402,9 @@ a.gitment-comment-name:visited {
   border-style: solid;
   border-color: transparent;
   border-radius: 0;
-
   white-space: nowrap;
   cursor: pointer;
   user-select: none;
-
   outline: none;
 }
 
@@ -4375,15 +4420,11 @@ a.gitment-comment-name:visited {
   margin-right: 15px;
 }
 
-a.gitment-footer-project-link,
-a.gitment-footer-project-link:visited,
-a.gitment-editor-login-link,
-a.gitment-editor-login-link:visited {
+a.gitment-footer-project-link, a.gitment-footer-project-link:visited, a.gitment-editor-login-link, a.gitment-editor-login-link:visited {
   color: #2196F3;
 }
 
-a.gitment-editor-logout-link,
-a.gitment-editor-logout-link:visited {
+a.gitment-editor-logout-link, a.gitment-editor-logout-link:visited {
   color: #666;
 }
 
@@ -4435,13 +4476,11 @@ a.gitment-editor-logout-link:hover {
   margin: 0;
 }
 
-.gitment-comment-body > *:first-child,
-.gitment-editor-preview > *:first-child {
+.gitment-comment-body>*:first-child, .gitment-editor-preview>*:first-child {
   margin-top: 0 !important;
 }
 
-.gitment-comment-body > *:last-child,
-.gitment-editor-preview > *:last-child {
+.gitment-comment-body>*:last-child, .gitment-editor-preview>*:last-child {
   margin-bottom: 0 !important;
 }
 
@@ -4452,21 +4491,17 @@ a.gitment-editor-logout-link:hover {
   max-height: 500px;
   padding: 16px;
   resize: vertical;
-
   max-width: 100%;
   margin: 0;
   font-size: 14px;
   line-height: 1.6;
-
-  background-color: #fff;
-
+  background-color: rgb(24, 24, 24);
   color: #333;
   vertical-align: middle;
   border: none;
   border-radius: 0;
   outline: none;
   box-shadow: none;
-
   overflow: visible;
 }
 
@@ -4476,13 +4511,10 @@ a.gitment-editor-logout-link:hover {
 
 .gitment-editor-preview {
   min-height: 150px;
-
   padding: 16px;
   background-color: transparent;
-
   width: 100%;
   font-size: 14px;
-
   line-height: 1.5;
   word-wrap: break-word;
 }
@@ -4533,11 +4565,9 @@ a.gitment-editor-footer-tip:hover {
   background-color: #f5f5f5;
 }
 
-.gitment-editor-submit,
-.gitment-comments-init-btn {
+.gitment-editor-submit, .gitment-comments-init-btn {
   color: #fff;
   background-color: #00BCD4;
-
   position: relative;
   display: inline-block;
   padding: 7px 13px;
@@ -4558,14 +4588,12 @@ a.gitment-editor-footer-tip:hover {
   appearance: none;
 }
 
-.gitment-editor-submit:hover,
-.gitment-comments-init-btn:hover {
+.gitment-editor-submit:hover, .gitment-comments-init-btn:hover {
   background-color: #00ACC1;
 }
 
-.gitment-comments-init-btn:disabled,
-.gitment-editor-submit:disabled {
-  color: rgba(255,255,255,0.75);
+.gitment-comments-init-btn:disabled, .gitment-editor-submit:disabled {
+  color: rgba(255, 255, 255, 0.75);
   background-color: #4DD0E1;
   box-shadow: none;
 }
@@ -4585,6 +4613,7 @@ a.gitment-editor-footer-tip:hover {
  * Markdown CSS
  * Copied from https://github.com/sindresorhus/github-markdown-css
  */
+
 .gitment-markdown {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -4600,18 +4629,15 @@ a.gitment-editor-footer-tip:hover {
   color: #969896;
 }
 
-.gitment-markdown .pl-c1,
-.gitment-markdown .pl-s .pl-v {
+.gitment-markdown .pl-c1, .gitment-markdown .pl-s .pl-v {
   color: #0086b3;
 }
 
-.gitment-markdown .pl-e,
-.gitment-markdown .pl-en {
+.gitment-markdown .pl-e, .gitment-markdown .pl-en {
   color: #795da3;
 }
 
-.gitment-markdown .pl-smi,
-.gitment-markdown .pl-s .pl-s1 {
+.gitment-markdown .pl-smi, .gitment-markdown .pl-s .pl-s1 {
   color: #333;
 }
 
@@ -4623,18 +4649,11 @@ a.gitment-editor-footer-tip:hover {
   color: #a71d5d;
 }
 
-.gitment-markdown .pl-s,
-.gitment-markdown .pl-pds,
-.gitment-markdown .pl-s .pl-pse .pl-s1,
-.gitment-markdown .pl-sr,
-.gitment-markdown .pl-sr .pl-cce,
-.gitment-markdown .pl-sr .pl-sre,
-.gitment-markdown .pl-sr .pl-sra {
+.gitment-markdown .pl-s, .gitment-markdown .pl-pds, .gitment-markdown .pl-s .pl-pse .pl-s1, .gitment-markdown .pl-sr, .gitment-markdown .pl-sr .pl-cce, .gitment-markdown .pl-sr .pl-sre, .gitment-markdown .pl-sr .pl-sra {
   color: #183691;
 }
 
-.gitment-markdown .pl-v,
-.gitment-markdown .pl-smw {
+.gitment-markdown .pl-v, .gitment-markdown .pl-smw {
   color: #ed6a43;
 }
 
@@ -4665,9 +4684,7 @@ a.gitment-editor-footer-tip:hover {
   color: #693a17;
 }
 
-.gitment-markdown .pl-mh,
-.gitment-markdown .pl-mh .pl-en,
-.gitment-markdown .pl-ms {
+.gitment-markdown .pl-mh, .gitment-markdown .pl-mh .pl-en, .gitment-markdown .pl-ms {
   font-weight: bold;
   color: #1d3e81;
 }
@@ -4739,8 +4756,7 @@ a.gitment-editor-footer-tip:hover {
   -webkit-text-decoration-skip: objects;
 }
 
-.gitment-markdown a:active,
-.gitment-markdown a:hover {
+.gitment-markdown a:active, .gitment-markdown a:hover {
   outline-width: 0;
 }
 
@@ -4765,9 +4781,7 @@ a.gitment-editor-footer-tip:hover {
   overflow: hidden;
 }
 
-.gitment-markdown code,
-.gitment-markdown kbd,
-.gitment-markdown pre {
+.gitment-markdown code, .gitment-markdown kbd, .gitment-markdown pre {
   font-family: monospace, monospace;
   font-size: 1em;
 }
@@ -4840,17 +4854,11 @@ a.gitment-editor-footer-tip:hover {
   border-collapse: collapse;
 }
 
-.gitment-markdown td,
-.gitment-markdown th {
+.gitment-markdown td, .gitment-markdown th {
   padding: 0;
 }
 
-.gitment-markdown h1,
-.gitment-markdown h2,
-.gitment-markdown h3,
-.gitment-markdown h4,
-.gitment-markdown h5,
-.gitment-markdown h6 {
+.gitment-markdown h1, .gitment-markdown h2, .gitment-markdown h3, .gitment-markdown h4, .gitment-markdown h5, .gitment-markdown h6 {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -4894,22 +4902,17 @@ a.gitment-editor-footer-tip:hover {
   margin: 0;
 }
 
-.gitment-markdown ul,
-.gitment-markdown ol {
+.gitment-markdown ul, .gitment-markdown ol {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.gitment-markdown ol ol,
-.gitment-markdown ul ol {
+.gitment-markdown ol ol, .gitment-markdown ul ol {
   list-style-type: lower-roman;
 }
 
-.gitment-markdown ul ul ol,
-.gitment-markdown ul ol ol,
-.gitment-markdown ol ul ol,
-.gitment-markdown ol ol ol {
+.gitment-markdown ul ul ol, .gitment-markdown ul ol ol, .gitment-markdown ol ul ol, .gitment-markdown ol ol ol {
   list-style-type: lower-alpha;
 }
 
@@ -4995,13 +4998,7 @@ a.gitment-editor-footer-tip:hover {
   outline: none;
 }
 
-.gitment-markdown p,
-.gitment-markdown blockquote,
-.gitment-markdown ul,
-.gitment-markdown ol,
-.gitment-markdown dl,
-.gitment-markdown table,
-.gitment-markdown pre {
+.gitment-markdown p, .gitment-markdown blockquote, .gitment-markdown ul, .gitment-markdown ol, .gitment-markdown dl, .gitment-markdown table, .gitment-markdown pre {
   margin-top: 0;
   margin-bottom: 16px;
 }
@@ -5042,44 +5039,24 @@ a.gitment-editor-footer-tip:hover {
   box-shadow: inset 0 -1px 0 #959da5;
 }
 
-.gitment-markdown h1,
-.gitment-markdown h2,
-.gitment-markdown h3,
-.gitment-markdown h4,
-.gitment-markdown h5,
-.gitment-markdown h6 {
+.gitment-markdown h1, .gitment-markdown h2, .gitment-markdown h3, .gitment-markdown h4, .gitment-markdown h5, .gitment-markdown h6 {
   margin-top: 24px;
   margin-bottom: 16px;
   font-weight: 600;
   line-height: 1.25;
 }
 
-.gitment-markdown h1 .octicon-link,
-.gitment-markdown h2 .octicon-link,
-.gitment-markdown h3 .octicon-link,
-.gitment-markdown h4 .octicon-link,
-.gitment-markdown h5 .octicon-link,
-.gitment-markdown h6 .octicon-link {
+.gitment-markdown h1 .octicon-link, .gitment-markdown h2 .octicon-link, .gitment-markdown h3 .octicon-link, .gitment-markdown h4 .octicon-link, .gitment-markdown h5 .octicon-link, .gitment-markdown h6 .octicon-link {
   color: #1b1f23;
   vertical-align: middle;
   visibility: hidden;
 }
 
-.gitment-markdown h1:hover .anchor,
-.gitment-markdown h2:hover .anchor,
-.gitment-markdown h3:hover .anchor,
-.gitment-markdown h4:hover .anchor,
-.gitment-markdown h5:hover .anchor,
-.gitment-markdown h6:hover .anchor {
+.gitment-markdown h1:hover .anchor, .gitment-markdown h2:hover .anchor, .gitment-markdown h3:hover .anchor, .gitment-markdown h4:hover .anchor, .gitment-markdown h5:hover .anchor, .gitment-markdown h6:hover .anchor {
   text-decoration: none;
 }
 
-.gitment-markdown h1:hover .anchor .octicon-link,
-.gitment-markdown h2:hover .anchor .octicon-link,
-.gitment-markdown h3:hover .anchor .octicon-link,
-.gitment-markdown h4:hover .anchor .octicon-link,
-.gitment-markdown h5:hover .anchor .octicon-link,
-.gitment-markdown h6:hover .anchor .octicon-link {
+.gitment-markdown h1:hover .anchor .octicon-link, .gitment-markdown h2:hover .anchor .octicon-link, .gitment-markdown h3:hover .anchor .octicon-link, .gitment-markdown h4:hover .anchor .octicon-link, .gitment-markdown h5:hover .anchor .octicon-link, .gitment-markdown h6:hover .anchor .octicon-link {
   visibility: visible;
 }
 
@@ -5112,15 +5089,11 @@ a.gitment-editor-footer-tip:hover {
   color: #6a737d;
 }
 
-.gitment-markdown ul,
-.gitment-markdown ol {
+.gitment-markdown ul, .gitment-markdown ol {
   padding-left: 2em;
 }
 
-.gitment-markdown ul ul,
-.gitment-markdown ul ol,
-.gitment-markdown ol ol,
-.gitment-markdown ol ul {
+.gitment-markdown ul ul, .gitment-markdown ul ol, .gitment-markdown ol ol, .gitment-markdown ol ul {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -5160,8 +5133,7 @@ a.gitment-editor-footer-tip:hover {
   font-weight: 600;
 }
 
-.gitment-markdown table th,
-.gitment-markdown table td {
+.gitment-markdown table th, .gitment-markdown table td {
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
 }
@@ -5187,12 +5159,11 @@ a.gitment-editor-footer-tip:hover {
   padding-bottom: 0.2em;
   margin: 0;
   font-size: 85%;
-  background-color: rgba(27,31,35,0.05);
+  background-color: rgba(27, 31, 35, 0.05);
   border-radius: 0;
 }
 
-.gitment-markdown code::before,
-.gitment-markdown code::after {
+.gitment-markdown code::before, .gitment-markdown code::after {
   letter-spacing: -0.2em;
   content: "\00a0";
 }
@@ -5220,8 +5191,7 @@ a.gitment-editor-footer-tip:hover {
   word-break: normal;
 }
 
-.gitment-markdown .highlight pre,
-.gitment-markdown pre {
+.gitment-markdown .highlight pre, .gitment-markdown pre {
   padding: 16px;
   overflow: auto;
   font-size: 85%;
@@ -5242,8 +5212,7 @@ a.gitment-editor-footer-tip:hover {
   border: 0;
 }
 
-.gitment-markdown pre code::before,
-.gitment-markdown pre code::after {
+.gitment-markdown pre code::before, .gitment-markdown pre code::after {
   content: normal;
 }
 
