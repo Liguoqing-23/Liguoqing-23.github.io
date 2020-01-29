@@ -331,6 +331,7 @@ progress {
 }
 
 a {
+  background-image: initial;
   background: transparent;
   text-decoration: none;
   background-image: initial;
@@ -1028,9 +1029,13 @@ body {
 }
 
 .article-entry code {
-  background: #eee;
+  background-image: initial;
+  background-color: rgb(29, 31, 32);
   padding: 0 .3em;
-  border: none
+  border-top-color: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
 }
 
 .article-entry pre code {
@@ -2396,9 +2401,9 @@ pre .css~* .id, pre .id {
 
 .article-entry table {
   width: 100%;
-  border: 1px solid #dedede;
+  border: 1px solid rgb(58, 58, 58);
   margin: 15px 0;
-  border-collapse: collapse
+  border-collapse: collapse;
 }
 
 .article-entry table td, .article-entry table tr {
@@ -2406,7 +2411,8 @@ pre .css~* .id, pre .id {
 }
 
 .article-entry table thead tr {
-  background: #f8f8f8
+  background-image: initial;
+  background-color: rgb(26, 28, 29);
 }
 
 .article-entry table tbody tr:hover {
@@ -2414,7 +2420,11 @@ pre .css~* .id, pre .id {
 }
 
 .article-entry table td, .article-entry table th {
-  border: 1px solid #dedede;
+  border: 1px solid;
+  border-top-color: rgb(58, 58, 58);
+  border-right-color: rgb(58, 58, 58);
+  border-bottom-color: rgb(58, 58, 58);
+  border-left-color: rgb(58, 58, 58);
   padding: 0 10px
 }
 
@@ -2675,7 +2685,7 @@ pre .css~* .id, pre .id {
 }
 
 .jump-container:hover .icon-back {
-  background: rgba(36, 193, 246, .9)
+  background: #005ccc
 }
 
 .jump-container, .toc-container {
@@ -2683,7 +2693,7 @@ pre .css~* .id, pre .id {
   cursor: pointer;
   width: 40px;
   height: 40px;
-  opacity: .8
+  opacity: .8;
 }
 
 .jump-plan-container {
@@ -2692,7 +2702,7 @@ pre .css~* .id, pre .id {
   left: -4px;
   width: 50px;
   height: 61px;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .jump-plan-container .jump-plane {
@@ -2708,7 +2718,7 @@ pre .css~* .id, pre .id {
 .mod-side-operation__jump-to-top .icon-back {
   transition: .3s;
   color: #fff;
-  background: #ccc;
+  background: rgb(39, 41, 43);
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   font-size: 32px;
@@ -2719,7 +2729,7 @@ pre .css~* .id, pre .id {
 }
 
 .mod-side-operation__jump-to-top .icon-back:hover {
-  background: #24c1f6;
+  background: #005ccc;
   color: #24c1f6
 }
 
@@ -2731,7 +2741,7 @@ pre .css~* .id, pre .id {
 }
 
 .toc-container.tooltip-left:hover {
-  background: rgba(36, 193, 246, .9)
+  background: #005ccc;
 }
 
 .toc-container.tooltip-left .icon-font {
@@ -2828,7 +2838,7 @@ pre .css~* .id, pre .id {
 
 .tooltip-left .tooltip-content {
   position: absolute;
-  background: rgba(36, 193, 246, .9);
+  background: #005ccc;
   z-index: 9999;
   width: 200px;
   bottom: 50%;
