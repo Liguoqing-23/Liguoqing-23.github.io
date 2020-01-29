@@ -4153,3 +4153,34 @@ category-all-page {
 .category-all-page .category-list-child {
   padding-left: 10px;
 }
+
+.v .vwrap {
+  border-color: rgb(85, 85, 85) !important;
+}
+
+.v .vbtn {
+  color: rgb(214, 211, 205) !important;
+  border-color: rgb(85, 85, 85) !important;
+  background-image: initial !important;
+  background-color: rgb(29, 31, 32) !important;
+  outline-color: initial !important;
+}
+
+.v * {
+  color: rgb(201, 197, 190) !important;
+}
+
+.v .vwrap .vheader .vinput {
+  border-bottom-color: rgb(85, 85, 85) !important;
+}
+
+.v .vlist .vcard .vhead .vsys {
+  background-image: initial !important;
+  background-color: rgb(29, 31, 32) !important;
+  color: rgb(186, 181, 170);
+}
+
+.v .vlist .vcard .vimg {
+  border-color: rgb(85, 85, 85) !important;
+
+}
