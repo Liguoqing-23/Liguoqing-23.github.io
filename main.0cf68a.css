@@ -2292,12 +2292,14 @@ pre .css~* .id, pre .id {
 }
 
 .article-entry blockquote {
-  background: #ddd;
-  border-left: 5px solid #ccc;
+  border-left-color: rgb(71, 87, 93);
+  background-image: initial;
+  background-color: rgb(27, 28, 30);
+  border-left: 5px solid;
   padding: 15px 20px;
   margin-top: 10px;
   border-left: 5px solid #657b83;
-  background: #f6f6f6
+  /* background: #f6f6f6 */
 }
 
 .article-entry blockquote p {
