@@ -4184,3 +4184,18 @@ category-all-page {
   border-color: rgb(85, 85, 85) !important;
 
 }
+
+.v .vlist .vcard .vh {
+  border-bottom-color: rgb(53, 53, 53) !important;
+}
+
+.v .vlist .vcard .vcontent.expand::before {
+  background-image: linear-gradient(rgba(24, 26, 27, 0), rgba(24, 26, 27, 0.9)) !important;
+  background-color: initial !important;
+}
+
+.v .vlist .vcard .vcontent.expand::after {
+  color: rgb(186, 181, 170) !important;
+background-image: initial !important;
+  background-color: rgba(24, 26, 27, 0.9) !important;
+}
