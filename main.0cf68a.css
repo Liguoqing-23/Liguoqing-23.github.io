@@ -2279,8 +2279,13 @@ pre .css~* .id, pre .id {
 .article-entry li code, .article-entry p code {
   padding: 1px 3px;
   margin: 0 3px;
-  background: #ddd;
-  border: 1px solid #ccc;
+  background-image: initial;
+  background-color: rgb(34, 36, 37);
+  border-top-color: rgb(61, 61, 61);
+  border-right-color: rgb(61, 61, 61);
+  border-bottom-color: rgb(61, 61, 61);
+  border-left-color: rgb(61, 61, 61);
+  border: 1px solid;
   font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace;
   word-wrap: break-word;
   font-size: 14px
