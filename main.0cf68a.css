@@ -1154,7 +1154,7 @@ body {
 }
 
 pre .comment {
-  color: #75715e
+  color: rgb(192, 187, 178);
 }
 
 pre .class .params, pre .function .keyword, pre .keyword {
@@ -1628,7 +1628,8 @@ pre .css~* .id, pre .id {
 #page-nav .page-number {
   width: 20px;
   height: 25px;
-  background: #4d4d4d;
+  background-image: initial;
+  background-color: rgb(61, 64, 67);
   display: inline-block;
   color: #fff;
   line-height: 25px;
@@ -1642,8 +1643,9 @@ pre .css~* .id, pre .id {
 }
 
 #page-nav .current {
-  background: #88acdb;
-  cursor: default
+  background-image: initial;
+  background-color: rgb(28, 57, 94);
+  cursor: default;
 }
 
 #page-nav .current:hover {
@@ -1870,7 +1872,7 @@ pre .css~* .id, pre .id {
   color: #fff;
   background: none;
   border: none;
-  border-bottom: 2px solid rgb(85, 85, 85);;
+  border-bottom: 2px solid rgb(85, 85, 85);
   font-family: Roboto, serif;
 }
 
@@ -2298,7 +2300,7 @@ pre .css~* .id, pre .id {
   border-left: 5px solid;
   padding: 15px 20px;
   margin-top: 10px;
-  border-left: 5px solid #657b83;
+  border-left: 5px solid;
   /* background: #f6f6f6 */
 }
 
@@ -2311,13 +2313,14 @@ pre .css~* .id, pre .id {
   font-style: italic
 }
 
-.article-entry ul li:before {
+.article-entry ul li::before {
   content: "";
   width: 6px;
   height: 6px;
-  border: 1px solid #999;
+  border: 1px solid rgb(85, 85, 85);
   border-radius: 10px;
-  background: #aaa;
+  background-image: initial;
+  background-color: rgb(48, 51, 54);
   display: inline-block;
   margin-right: 10px;
   float: left;
@@ -2363,7 +2366,7 @@ pre .css~* .id, pre .id {
   border-bottom: 1px solid rgb(205, 5, 5);
 }
 .article-entry h3 {
-  border-bottom: 1px dotted rgb(138, 137, 137);
+  border-bottom: 1px dotted rgb(75, 74, 74);
 }
 
 
@@ -3140,7 +3143,9 @@ pre .css~* .id, pre .id {
   .article-header {
     border-left: none;
     padding: 0;
-    border-bottom: 1px dotted #ddd;
+    border-bottom: 1px dotted;
+    border-left-color: initial;
+    border-bottom-color: rgb(85, 85, 85);
   }
   .article-header h1 {
     margin-bottom: 10px;
@@ -3180,7 +3185,7 @@ pre .css~* .id, pre .id {
     margin: 10px 0;
     border: 0;
     font-size: 16px;
-    color: #555
+    color: rgb(201, 197, 190);
   }
   .article .article-more-link {
     margin: 0
@@ -3322,7 +3327,7 @@ pre .css~* .id, pre .id {
     margin: 0;
     position: relative;
     z-index: 2;
-    color: #424242
+    color: rgb(208, 205, 198);
   }
   #mobile-nav .overlay {
     height: 110px;
@@ -3354,13 +3359,14 @@ pre .css~* .id, pre .id {
     margin-right: 28px
   }
   .header-menu.tools-nav li, .header-menu.tools-nav ul {
-    border-color: #fff
+    border-color: rgb(85, 85, 85);
   }
   .header-menu.tools-nav li a, .header-menu.tools-nav ul a {
     color: #fff
   }
   .header-menu.tools-nav li a.active, .header-menu.tools-nav ul a.active {
-    background: #81b5cc
+    background-image: initial;
+    background-color: rgb(36, 74, 90);
   }
   .header-menu ul {
     text-align: center;
@@ -3376,8 +3382,12 @@ pre .css~* .id, pre .id {
     justify-content: space-around;
     position: relative;
     z-index: 1;
-    border: 1px solid #a0a0a0;
-    border-radius: 3px
+    border: 1px solid;
+    border-top-color: rgb(85, 85, 85);
+    border-right-color: rgb(85, 85, 85);
+    border-bottom-color: rgb(85, 85, 85);
+    border-left-color: rgb(85, 85, 85);
+    border-radius: 3px;
   }
   .header-menu li {
     border-left: 1px solid #a0a0a0
@@ -3394,7 +3404,7 @@ pre .css~* .id, pre .id {
     text-overflow: ellipsis;
     white-space: nowrap;
     display: block;
-    color: #a0a0a0
+    color: rgb(186, 181, 171);
   }
   .header-menu li a.active {
     color: #eaeaea;
@@ -3402,14 +3412,19 @@ pre .css~* .id, pre .id {
   }
   .profilepic {
     display: block;
-    border: 5px solid #fff;
+    border: 5px solid;
+    border-top-color: rgb(85, 85, 85);
+    border-right-color: rgb(85, 85, 85);
+    border-bottom-color: rgb(85, 85, 85);
+    border-left-color: rgb(85, 85, 85);
+    background-image: initial;
+    background-color: rgb(28, 57, 94);
     border-radius: 300px;
     width: 128px;
     height: 128px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background: #88acdb;
     -webkit-transition: all .2s ease-in;
     display: -webkit-box;
     -webkit-box-orient: horizontal;
@@ -3426,7 +3441,7 @@ pre .css~* .id, pre .id {
   }
   .header-subtitle {
     text-align: center;
-    color: #999;
+    color: rgb(186, 181, 171);
     font-size: 14px;
     line-height: 25px;
     overflow: hidden;
@@ -3434,7 +3449,7 @@ pre .css~* .id, pre .id {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    padding: 0 24px
+    padding: 0 24pxp;
   }
 }
 
