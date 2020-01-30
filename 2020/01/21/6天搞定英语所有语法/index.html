@@ -33,7 +33,7 @@
   <style type="text/css">
   
     #container.show {
-      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+      background: linear-gradient(200deg,#3d4043,#000);
     }
   </style>
   
@@ -64,7 +64,7 @@
 		  <h1 class="header-author"><a href="/">木玉青</a></h1>
 		</hgroup>
 		
-		<p class="header-subtitle">每天进步一点点~</p>
+		<p class="header-subtitle">精通one 学习another 关注next</p>
 		
 
 		<nav class="header-menu">
@@ -76,7 +76,7 @@
 	        
 				<li><a href="/archives/index.html">归档</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/tags/%E8%AE%B0%E5%BD%95/">记录</a></li>
 	        
 			</ul>
 		</nav>
@@ -152,7 +152,7 @@
 			  <h1 class="header-author js-header-author">木玉青</h1>
 			</hgroup>
 			
-			<p class="header-subtitle"><i class="icon icon-quo-left"></i>每天进步一点点~<i class="icon icon-quo-right"></i></p>
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>精通one 学习another 关注next<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -184,7 +184,7 @@
 		        
 					<li style="width: 25%"><a href="/archives/index.html">归档</a></li>
 		        
-					<li style="width: 25%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 25%"><a href="/tags/%E8%AE%B0%E5%BD%95/">记录</a></li>
 		        
 				</ul>
 			</nav>
@@ -463,15 +463,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">英语</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">算法竞赛</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">蓝桥杯2015初赛</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">英语</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -491,10 +491,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">CSS参考手册</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">C</a>
               </li>
              
@@ -507,7 +503,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">HTML参考手册</a>
+                <a href="javascript:void(0)" class="js-tag color3">CSS参考手册</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -515,7 +511,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color4">HTML参考手册</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">记录</a>
               </li>
             
             <div class="clearfix"></div>
@@ -525,26 +525,26 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
             缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
             3、在根目录_config.yml里添加配置：
-<pre style="font-size: 12px;" q-show="jsonFail">
-  jsonContent:
-    meta: false
-    pages: false
-    posts:
-      title: true
-      date: true
-      path: true
-      text: false
-      raw: false
-      content: false
-      slug: false
-      updated: false
-      comments: false
-      link: false
-      permalink: false
-      excerpt: false
-      categories: false
-      tags: true
-</pre>
+			<pre style="font-size: 12px;" q-show="jsonFail">
+			  jsonContent:
+				meta: false
+				pages: false
+				posts:
+				  title: true
+				  date: true
+				  path: true
+				  text: false
+				  raw: false
+				  content: false
+				  slug: false
+				  updated: false
+				  comments: false
+				  link: false
+				  permalink: false
+				  excerpt: false
+				  categories: false
+				  tags: true
+			</pre>
           </p>
           <li class="search-li" q-repeat="items" q-show="isShow">
             <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
@@ -566,7 +566,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">欢迎莅临本蒟蒻的Blog，我是天元&lt;br&gt;&lt;br&gt;  建设才刚刚起步，欢迎屏幕前的你&lt;br&gt;提出宝贵的建议&lt;br&gt;&lt;br&gt;让我们一起：&lt;br&gt;精通one&lt;br&gt;学习another&lt;br&gt;关注next！</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">欢迎莅临本蒟蒻的Blog，我是天元&lt;br&gt;&lt;br&gt;  建设才刚刚起步，欢迎屏幕前的你&lt;br&gt;提出宝贵的建议</div>
   	  	
     	</section>
     

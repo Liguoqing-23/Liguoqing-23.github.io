@@ -1,14 +1,16 @@
-#container.show {
+/* #container.show {
   background-image: linear-gradient(200deg, rgb(24, 66, 84), rgb(109, 78, 19)) !important;
   background-color: initial !important;
-}
+} */
 
 * {
-  font-family: Consolas !important;
+  font-family: Consolas;
 }
 
-#timeDate,#times,#wenzhangshu {
-  font-size: 12x;
+#timeDate, #times, #wenzhangshu {
+  font-size: 14px;
+  color: rgb(184, 179, 168);
+  font-family: KaiTi;
 }
 
 div {
@@ -22,7 +24,6 @@ p {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-
 
 .clearfix:after, .clearfix:before {
   content: "";
@@ -526,19 +527,24 @@ ol, ul {
 
 h1, h2, h3 {
   line-height: 2;
-  font-weight: 400
+  font-weight: 400;
+  font-family: KaiTi;
+}
+
+h4, h5, h6 {
+  font-family: KaiTi;
 }
 
 h1 {
-  font-size: 18px
+  font-size: 18px;
 }
 
 h2 {
-  font-size: 16px
+  font-size: 16px;
 }
 
 h3 {
-  font-size: 14px
+  font-size: 14px;
 }
 
 i {
@@ -749,40 +755,40 @@ body, button, input, select, textarea {
   font-family: lucida grande, lucida sans unicode, lucida, helvetica, Hiragino Sans GB, Microsoft YaHei, WenQuanYi Micro Hei, sans-serif;
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.75
+  line-height: 1.75;
 }
 
 body {
   overflow-y: hidden;
-  background: #eaeaea
+  background: #eaeaea;
 }
 
 #container, body, html {
   height: 100%;
   overflow-x: hidden;
-  overflow-y: auto
+  overflow-y: auto;
 }
 
 #mobile-nav {
-  display: none
+  display: none;
 }
 
 #container {
   position: relative;
-  min-height: 100%
+  min-height: 100%;
 }
 
 #container .anm-canvas {
-  display: none
+  display: none;
 }
 
 #container.show .anm-canvas {
   display: block;
-  position: fixed
+  position: fixed;
 }
 
 .body-wrap {
-  margin-bottom: 80px
+  margin-bottom: 80px;
 }
 
 .mid-col {
@@ -792,16 +798,16 @@ body {
   background-image: initial;
   background-color: rgb(33, 35, 37);
   left: 300px;
-  width: auto
+  width: auto;
 }
 
 .mid-col.show {
   background-image: none;
   background-color: initial;
-  opacity: .9
+  opacity: .9;
 }
 
-.mid-col.show .article {
+.mid-col.show .article,.mid-col.show .archives-wrap {
   background-image: initial;
   background-color: rgba(24, 26, 27, 0.3);
 }
@@ -814,29 +820,30 @@ body {
   opacity: 1;
   transition: all .2s ease-in;
   height: 100%;
-  z-index: 999
+  z-index: 999;
 }
 
 .left-col .overlay {
   width: 100%;
   height: 180px;
-  position: absolute
+  position: absolute;
 }
 
 .left-col .intrude-less {
   width: 76%;
   text-align: center;
-  margin: 112px auto 0
+  margin: 112px auto 0;
 }
 
 .left-col #header {
   width: 100%;
   height: 300px;
   position: relative;
-  border-bottom: 1px solid color-border
+  border-bottom: 1px solid color-border;
 }
 
 .left-col #header a {
+  font-family: KaiTi;
   color: rgb(194, 190, 181);
 }
 
@@ -847,13 +854,17 @@ body {
 .left-col #header .header-subtitle {
   text-align: center;
   color: rgb(186, 181, 171);
-  font-size: 14px;
-  line-height: 25px;
+  font-size: 16px;
+  font-family: KaiTi;
+  line-height: 26px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical
+  -webkit-box-orient: vertical;
+  border-radius: 14px;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #323436;
 }
 
 .left-col #header .header-menu {
@@ -867,29 +878,29 @@ body {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   -webkit-box-pack: center;
-  -webkit-box-align: center
+  -webkit-box-align: center;
 }
 
 .left-col #header .header-menu li {
-  cursor: default
+  cursor: default;
 }
 
 .left-col #header .header-menu li a {
-  font-size: 14px;
-  min-width: 300px
+  font-size: 16px;
+  min-width: 300px;
 }
 
 .left-col #header .header-smart-menu {
-  font-size: 12px;
-  margin-bottom: 20px
+  font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .left-col #header .header-smart-menu a:after {
-  content: "/"
+  content: " /";
 }
 
 .left-col #header .header-smart-menu a:last-child:after {
-  content: ""
+  content: "";
 }
 
 .left-col #header .profilepic {
@@ -912,7 +923,7 @@ body {
   -webkit-box-orient: horizontal;
   -webkit-box-pack: center;
   -webkit-box-align: center;
-  text-align: center
+  text-align: center;
 }
 
 .left-col #header .profilepic img {
@@ -1429,7 +1440,7 @@ pre .css~* .id, pre .id {
   position: absolute;
   transition: -webkit-transform .3s ease-in;
   transition: transform .3s ease-in;
-  transition: transform .3s ease-in, -webkit-transform .3s ease-in
+  transition: transform .3s ease-in, -webkit-transform .3s ease-in;
 }
 
 #header .header-nav .social {
@@ -1442,7 +1453,7 @@ pre .css~* .id, pre .id {
   flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center
+  justify-content: center;
 }
 
 #header .header-nav .social a {
@@ -1460,7 +1471,7 @@ pre .css~* .id, pre .id {
   opacity: .7;
   width: 28px;
   height: 28px;
-  line-height: 26px
+  line-height: 26px;
 }
 
 #header .header-nav .social a:hover {
@@ -1593,14 +1604,80 @@ pre .css~* .id, pre .id {
   border: 1px solid #ff5722
 }
 
-#header .header-nav .social a.weixin {
+/* #header .header-nav .social a.weixin {
   background: #4caf50;
-  border: 1px solid #4caf50
+  border: 1px solid #4caf50;
 }
 
 #header .header-nav .social a.weixin:hover {
-  border: 1px solid #4caf50
+  border: 1px solid #4caf50;
+} */
+
+#header .header-nav .social a.weixin {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: initial;
+  background-color: rgb(28, 30, 31);
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: rgba(0, 0, 0, 0.44) 0px 5px 15px -5px;
+  color: rgb(95, 174, 227);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
 }
+
+#header .header-nav .social a.weixin i {
+  line-height: 30px;
+  font-size: 15px;
+  transition: 0.2s linear;
+}
+
+#header .header-nav .social a.weixin:hover i {
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+#header .header-nav .social a.weixin::before {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+#header .header-nav .social a.weixin:hover::before {
+  animation: flash 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes flash {
+  0% {
+    left: -100%;
+    top: 90%;
+  }
+
+  50% {
+    left: 10%;
+    top: -30%;
+  }
+
+  100% {
+    left: -10%;
+    top: -10%;
+  }
+}
+
+
+
+
+
+
 
 #header .header-nav .social a.qq {
   background: #34baad;
@@ -2130,8 +2207,9 @@ pre .css~* .id, pre .id {
   font-weight: 300;
   line-height: 35px;
   margin-bottom: 20px;
-  font-size: 26px;
-  transition: color .3s
+  font-size: 30px;
+  transition: color .3s;
+  font-family: KaiTi;
 }
 
 .article-header {
@@ -2265,7 +2343,8 @@ pre .css~* .id, pre .id {
 
 .article-inner h1:first-child {
   margin-bottom: 10px;
-  display: inline
+  display: inline;
+  /* font-family: KaiTi; */
 }
 
 .article-entry {
