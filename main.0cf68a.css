@@ -807,7 +807,7 @@ body {
   opacity: .9;
 }
 
-.mid-col.show .article,.mid-col.show .archives-wrap {
+.mid-col.show .article, .mid-col.show .archives-wrap {
   background-image: initial;
   background-color: rgba(24, 26, 27, 0.3);
 }
@@ -822,12 +822,12 @@ body {
   height: 100%;
   z-index: 999;
 }
-
+/* 
 .left-col .overlay {
   width: 100%;
   height: 180px;
   position: absolute;
-}
+} */
 
 .left-col .intrude-less {
   width: 76%;
@@ -991,6 +991,7 @@ body {
 ::-webkit-scrollbar-track:hover {
   background-color: rgba(0, 0, 0, .15)
 }
+
 /* 
 ::-webkit-scrollbar-button:start {
   width: 10px;
@@ -1022,7 +1023,7 @@ body {
 
 .article-entry .highlight, .article-entry pre {
   background-image: initial;
-    background-color: rgb(35, 37, 39);
+  background-color: rgb(35, 37, 39);
   margin: 10px 0;
   padding: 10px;
   overflow: auto;
@@ -1661,23 +1662,15 @@ pre .css~* .id, pre .id {
     left: -100%;
     top: 90%;
   }
-
   50% {
     left: 10%;
     top: -30%;
   }
-
   100% {
     left: -10%;
     top: -10%;
   }
 }
-
-
-
-
-
-
 
 #header .header-nav .social a.qq {
   background: #34baad;
@@ -1727,7 +1720,7 @@ pre .css~* .id, pre .id {
 
 #page-nav .current:hover {
   background-image: initial;
-    background-color: rgb(28, 57, 94);
+  background-color: rgb(28, 57, 94);
 }
 
 #page-nav .extend {
@@ -1805,8 +1798,8 @@ pre .css~* .id, pre .id {
 
 .archives .archive-article-title {
   font-size: 16px;
-  color: rgb(214, 211, 205);s
-  transition: color .3s
+  color: rgb(214, 211, 205);
+  s transition: color .3s
 }
 
 .archives .archive-article-title:hover {
@@ -2441,13 +2434,14 @@ pre .css~* .id, pre .id {
   padding-bottom: 5px;
   /* border-bottom: 1px solid #ddd */
 }
+
 .article-entry h2 {
   border-bottom: 1px solid rgb(205, 5, 5);
 }
+
 .article-entry h3 {
   border-bottom: 1px dotted rgb(75, 74, 74);
 }
-
 
 .article-entry video {
   max-width: 100%
@@ -3408,13 +3402,13 @@ pre .css~* .id, pre .id {
     z-index: 2;
     color: rgb(208, 205, 198);
   }
-  #mobile-nav .overlay {
+  /* #mobile-nav .overlay {
     height: 110px;
     position: absolute;
     width: 100%;
     z-index: 2;
     background: #4d4d4d
-  }
+  } */
   #mobile-nav #header {
     padding: 10px 0 0
   }
@@ -4261,7 +4255,6 @@ category-all-page {
 
 .v .vlist .vcard .vimg {
   border-color: rgb(85, 85, 85) !important;
-
 }
 
 .v .vlist .vcard .vh {
@@ -4275,6 +4268,6 @@ category-all-page {
 
 .v .vlist .vcard .vcontent.expand::after {
   color: rgb(186, 181, 170) !important;
-background-image: initial !important;
+  background-image: initial !important;
   background-color: rgba(24, 26, 27, 0.9) !important;
 }
