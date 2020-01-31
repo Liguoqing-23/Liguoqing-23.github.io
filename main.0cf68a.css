@@ -4227,6 +4227,11 @@ category-all-page {
   padding-left: 10px;
 }
 
+.v {
+  width: 95%;
+  margin: auto;
+}
+
 .v .vwrap {
   border-color: rgb(85, 85, 85) !important;
 }
