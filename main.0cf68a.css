@@ -2356,15 +2356,13 @@ pre .css~* .id, pre .id {
   margin: 0 3px;
   background-image: initial;
   background-color: rgb(34, 36, 37);
-  border-top-color: rgb(61, 61, 61);
-  border-right-color: rgb(61, 61, 61);
-  border-bottom-color: rgb(61, 61, 61);
-  border-left-color: rgb(61, 61, 61);
-  border: 1px solid;
-  font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace;
+  border: 1px solid rgb(85, 85, 85);
+  /* font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace; */
+  font-family: Consolas;
   word-wrap: break-word;
   font-size: 14px
 }
+
 
 .article-entry blockquote {
   border-left-color: rgb(71, 87, 93);
@@ -2441,7 +2439,7 @@ pre .css~* .id, pre .id {
 }
 
 .article-entry h3 {
-  border-bottom: 1px dotted rgb(75, 74, 74);
+  /* border-bottom: 1px dotted rgb(75, 74, 74); */
 }
 
 .article-entry video {
@@ -2476,7 +2474,8 @@ pre .css~* .id, pre .id {
   color: rgb(188, 183, 173);
   border: 1px solid rgb(85, 85, 85);
   text-shadow: rgb(61, 64, 67) 0px 1px;
-  font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace
+  /* font-family: Menlo, Monaco, Andale Mono, lucida console, Courier New, monospace */
+  font-family: Consolas;
 }
 
 .article-entry pre code {
