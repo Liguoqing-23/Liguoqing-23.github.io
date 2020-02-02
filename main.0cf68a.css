@@ -8,7 +8,7 @@
 }
 
 .my-menu-bottom-show {
-  color: rgb(232, 230, 227);
+  color: rgb(194, 190, 181);;
   position: absolute;
   top: 0px;
   right: 20px;
@@ -21,6 +21,7 @@
   border-bottom: 2px solid;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  background-color: rgb(85, 85, 85);
 }
 
 .my-menu-bottom {
