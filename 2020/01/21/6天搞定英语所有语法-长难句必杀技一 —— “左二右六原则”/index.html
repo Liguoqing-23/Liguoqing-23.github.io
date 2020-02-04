@@ -221,7 +221,7 @@
 		</nav>
 		
 		<nav id="wenzhangshu">
-			总文章数 60
+			总文章数 61
         </nav>
 
         <nav class="header-nav">
@@ -242,23 +242,7 @@ src="//music.163.com/outchain/player?type=2&id=4872793&auto=0&height=32"></ifram
 
                 <br /><br /><br />
 
-                <span id="timeDate">载入天数...</span><br /><span id="times">载入时分秒...</span>
-                <script>
-                    var now = new Date();
-                    function createtime() {
-                        var grt = new Date("01/01/2020 00:00:00");//此处修改你的建站时间或者网站上线时间 
-                        now.setTime(now.getTime() + 250);
-                        days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
-                        hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
-                        if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
-                        mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
-                        seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
-                        snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
-                        document.getElementById("timeDate").innerHTML = " 已运行 ";
-                        document.getElementById("times").innerHTML = dnum + " 天 " + hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
-                    }
-                    setInterval("createtime()", 250);
-                </script>
+                
 
         </nav>
     </header>
@@ -360,7 +344,7 @@ src="//music.163.com/outchain/player?type=2&id=4872793&auto=0&height=32"></ifram
     <label for="hbePass">Hey, password is required here.</label>
     <div class="bottom-line"></div>
   </div>
-  <script id="hbeData" type="hbeData" data-hmacdigest="ee34d506f69a601e4991b10a33f6fa3009e9a46f80dbdf648086136de907ecac">7de512a96093a4c92f3876aa378fdfb33b6afe589aba24424ccafec2b5b1a9b36ccfc9e9bd967c1b6aed6d0ab1b373dfa424c3f76945bb87b1c3119eff5e19ce12282980eabb54afa79d465cd355a06ece948fab77aee1c2dd2b2592c4ac18f25e7ebaab28803ddac155bf7c7c6fa54ca481a9ee45f1d701599c24f97bfbb9dd992fee464c2bc091b2e75ae75b32136dd4fa204f3a5f8d6397916eb936e2ec1a8e5097783bc8391c25aab67aa3bbd94396767be00d53856ec16bef34758f1a75252df883aa36d9206a36f0266b23f8c1f3cf94b907abd3de6b3714d1fa930051b70e0e7a1d38174b63872e5e8e6a47a50f2e56d78e732bd7cf88942f84fc0443df55f59d792303840df33bf767b672150661b19a9b3ec03bd65011e300878e1f86ef73c77126dbf898f2f5e6ce4959114178a1aeccbcca8700f1b3f1a8ed9f896aac4955938f1e4285b0afb85f67c27346eb20f0f550b63bf30f9c1648ec2399e9a738aef03a5ad9f139dc6d83a80c540c0ccc3518b308c90fcb7efa1bb77f274efe5036d7e7758408c4815e48f8fdf9852c822ff5f1fa21136ca21cff45495ffd60938f3e35d0797c46656c18e223d6bf6c5f035fd70d3309a2645b6a6ff4bb09fa6274be24d089248ccdca8dbebbce1e323c9de2e20ac31c3996c903780219fc5e6895a9651210a5befa19de8e160e729fa7abb2c3ac5f2b289974d33f87dacbf2d1c433fa69b27e247ec0f351d26dab35db7b9bde08554013adde7849d2e4edee7e64957386373ec3ba31d15cbe06d39e839600b1b2e50f8ee3f4a92d88970f6ca70a5204671dd5584c30fc1cd97f6c3bfd5dd6486200a45580921dbedeed309d203a16ab54f54da00cd528c4bedf7e271597adaf97cab366aff3d06f1910cd33ad6af0046d0df841ac55f0384c243ef3b16cd1057428fef0e90651bf0ba8641f6afcecff1d5ee0caeb16162f6219bb415d5a37d46c97b40bf8102ed7f62813f710658aee0f789df4ce9f230c79487d191d2229e93ba7c3b63c0205f74cb9f4a9b246592c1311a4c84e8220a0f86da48a8fcad5fb927edd97870f39797218c93be95623048f19202be6f57be4bc70e83a9faf2daca218467fb40c62037bacd59b69dc620e4fb7d630c040bf52aee290bde3141edf4a87d17e7cd5c197c6f1b6b346c67880a4617179f729766087feca6909ecc1297b613166f03384aaf7e98dd0542900d8d6f50c168fe403d7d26153b7dcbcce362475f2bde2d5317d0b2aebdb944c68791f95c230e6c2c34fead8320ba42cc58981aebedb2abb49122f2c51dc041496834f57eeca9f188787741aa5d8d4792caccee179ae5a2bed5875b6854ed2370d8000a899b150bf3c03dbac6012e6541d64bc28788e777eaf5bf3bdec1fa3a5de1a3364fdab2f69dcaa752c47901c2987afde676463b62f4a84216efe18ba43e13963ec44bc9316f516294f9dcfba032662416aab6550f899ce65f72e678340f11ce257d48103319b75603773d2155810e761b2009844beaa977940e2ab604060e1d8486f9c39134b8158edcb9e68c531c2f2febecc8d0a12464aba00046d95c5d9ddbcaff441832b6ac9f3116f29597aa924de73aafb2f4d2df2b78a1f330fa5db98fae977a433a2f714edb0245d6d042507b155294a1c79397280c629ee24241e1eae7ab665cbc0c36ed02c40ae25d1d48c55379069d4ac1f4bcda2234e29eaf3f96c3df77b1ceaebbeb74404547aa4817d21d15684275722ebb5d856d081577b8d09fc585e11d3cdcc272ec3db40cd32505e7d9cdc2229a79cd0df502ff0380dbe67961ec5040fbb93f1ff635f2bd793e56bacf1793786940c5d1371a322b4af498eadeb95e0f75f08e0cc7348807357fe100a2d3038fb5a6332dd6a366f4eff2a7ff4b0af5905c2a1865a506597559cc400eb78d2edbc3fdbc03f9bb174c70930e2ac072998e7eb308accb8159e2cbf0fb85a3c8917b44a9d662ec021b22ecf5976af6827d5ab5096c57f25e270f006f563f7bea2e99b7601152f1bbb1b14839e3d4c845ca2b78854ed3213bc0c6f57efe31d52207fc8e075a8a25d5b8311f27e280cf081b6a6569b48e3bee7465a2230948ab289aae882568c7da8ec401f5ea7247ff9d980ffbaa4b9391d005192dd3305d77aec9908dfdba627a6536f7082b4c100b6d1908201c36eb5e0fa3f7e8dc15b3d13603edca206c86c3971bb51fc25f24fde64f8d8f6444da4e5975694e7ec3b684fc585ad837a5d1fbbb4c932633aa579221a4e1b61dcf98f43710ea66ec8898f3f17423ece49aa96599f973da0f1abc61ef5812abd3c03387bce4962f5c78dc2ee25fc521d0f686646b4e20b07f77d6178de3d3a00380da06717f630e2742295dbbfde8a1c5cdb3f2c8cda9fb35eb40351a29446caa05d98bc7b2d76ac00e0b42cb301cdab0d933b65f8c6e8d0af60ad086f85a8758e04b1529f3c3fb443f2f1043f1aa4713a9bb7c643aa28d38dd474bac699e6fbcf7c3e4ae319ea12075016a0ab76f251bdb9c2796aface9a19bd80d47cfd29ee33851c33aea2721570e748196c3dd96337d27d32b1776718e6f6da2736c1b5529a7f6593f8c7574081c3a5da760248763dfe</script>
+  <script id="hbeData" type="hbeData" data-hmacdigest="12f989b5107641fc4f5b7a5b4c1d8c172bf7e8c3133d654785e1fd1032a367fd">7de512a96093a4c92f3876aa378fdfb33b6afe589aba24424ccafec2b5b1a9b36ccfc9e9bd967c1b6aed6d0ab1b373dfa424c3f76945bb87b1c3119eff5e19ce12282980eabb54afa79d465cd355a06ece948fab77aee1c2dd2b2592c4ac18f25e7ebaab28803ddac155bf7c7c6fa54ca481a9ee45f1d701599c24f97bfbb9dd992fee464c2bc091b2e75ae75b32136dd4fa204f3a5f8d6397916eb936e2ec1a8e5097783bc8391c25aab67aa3bbd94396767be00d53856ec16bef34758f1a75252df883aa36d9206a36f0266b23f8c1f3cf94b907abd3de6b3714d1fa930051b70e0e7a1d38174b63872e5e8e6a47a50f2e56d78e732bd7cf88942f84fc0443df55f59d792303840df33bf767b672150661b19a9b3ec03bd65011e300878e1f86ef73c77126dbf898f2f5e6ce4959114178a1aeccbcca8700f1b3f1a8ed9f896aac4955938f1e4285b0afb85f67c27346eb20f0f550b63bf30f9c1648ec2399e9a738aef03a5ad9f139dc6d83a80c540c0ccc3518b308c90fcb7efa1bb77f274efe5036d7e7758408c4815e48f8fdf9852c822ff5f1fa21136ca21cff45495ffd60938f3e35d0797c46656c18e223d6bf6c5f035fd70d3309a2645b6a6ff4bb09fa6274be24d089248ccdca8dbebbce1e323c9de2e20ac31c3996c903780219fc5e6895a9651210a5befa19de8e160e729fa7abb2c3ac5f2b289974d33f87dacbf2d1c433fa69b27e247ec0f351d26dab35db7b9bde08554013adde7849d2e4edee7e64957386373ec3ba31d15cbe06d39e839600b1b2e50f8ee3f4a92d88970f6ca70a5204671dd5584c30fc1cd97f6c3bfd5dd6486200a45580921dbedeed309d203a16ab54f54da00cd528c4bedf7e271597adaf97cab366aff3d06f1910cd33ad6af0046d0df841ac55f0384c243ef3b16cd1057428fef0e90651bf0ba8641f6afcecff1d5ee0caeb16162f6219bb415d5a37d46c97b40bf8102ed7f62813f710658aee0f789df4ce9f230c79487d191d2229e93ba7c3b63c0205f74cb9f4a9b246592c1311a4c84e8220a0f86da48a8fcad5fb927edd97870f39797218c93be95623048f19202be6f57be4bc70e83a9faf2daca218467fb40c62037bacd59b69dc620e4fb7d630c040bf52aee290bde3141edf4a87d17e7cd5c197c6f1b6b346c67880a4617179f729766087feca6909ecc1297b613166f03384aaf7e98dd0542900d8d6f50c168fe403d7d26153b7dcbcce362475f2bde2d5317d0b2aebdb944c68791f95c230e6c2c34fead8320ba42cc58981aebedb2abb49122f2c51dc041496834f57eeca9f188787741aa5d8d4792caccee179ae5a2bed5875b6854ed2370d8000a899b150bf3c03dbac6012e6541d64bc28788e777eaf5bf3bdec1fa3a5de1a3364fdab2f69dcaa752c47901c2987afde676463b62f4a84216efe18ba43e13963ec44bc9316f516294f9dcfba032662416aab6550f899ce65f72e678340f11ce257d48103319b75603773d2155810e761b2009844beaa977940e2ab604060e1d8486f9c39134b8158edcb9e68c531c2f2febecc8d0a12464aba00046d95c5d9ddbcaff441832b6ac9f3116f29597aa924de73aafb2f4d2df2b78a1f330fa5db98fae977a433a2f714edb0245d6d042507b155294a1c79397280c629ee24241e1eae7ab665cbc0c36ed02c40ae25d1d48c55379069d4ac1f4bcda2234e29eaf3f96c3df77b1ceaebbeb74404547aa4817d21d15684275722ebb5d856d081577b8d09fc585e11d3cdcc272ec3db40cd32505e7d9cdc2229a79cd0df502ff0380dbe67961ec5040fbb93f1ff635f2bd793e56bacf1793786940c5d1371a322b4af498eadeb95e0f75f08e0cc7348807357fe100a2d3038fb5a6332dd6a366f4eff2a7ff4b0af5905c2a1865a506597559cc400eb78d2edbc3fdbc03f9bb174c70930e2ac072998e7eb308accb8159e2cbf0fb85a3c8917b44a9d662ec021b22ecf5976af6827d5ab5096c57f25e270f006f563f7bea2e99b7601152f1bbb1b14839e3d4c845ca2b78854ed3213bc0c6f57efe31d52207fc8e075a8a25d5b8311f27e280cf081b6a6569b48e3bee7465a2230948ab289aae882568c7da8ec401f5ea7247ff9d980ffbaa4b9391d005192dd3305d77aec9908dfdba627a6536f7082b4c100b6d1908201c36eb5e0fa3f7e8dc15b3d13603edca206c86c3971bb51fc25f24fde64f8d8f6444da4e5975694e7ec3b684fc585ad837a5d1fbbb4c932633aa579221a4e1b61dcf98f43710ea66ec8898f3f17423ece49aa96599f973da0f1abc61ef5812abd3c03387bce4962f5c78dc2ee25fc521d0f686646b4e20b07f77d6178de3d3a00380da06717f630e2742295dbbfde8a1c5cdb3f2c8cda9fb35eb40351a29446caa05d98bc7b2d76ac00e0b42cb301cdab0d933b65f8c6e8d0af60ad086f85a8758e04b1529f3c3fb443f2f1043f1aa4713a9bb7c643aa28d38dd474bac699e6fbcf7c3e4ae319ea12075016a0ab76f251bdb92dd77bcaca04b29fa2d62221ddfe87283e11a047310171eb0282c16d9622c1fd8ae907bb9cee1b4038ce67196d8d942770d0612c4fd1fb7727bf406939d468c0</script>
 </div>
 <script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
       
@@ -508,8 +492,27 @@ src="//music.163.com/outchain/player?type=2&id=4872793&auto=0&height=32"></ifram
     		&copy; 2020 木玉青
     	</div>
       	<div class="footer-right">
-		
-		
+			
+			<!--
+			<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+			<script>
+				var now = new Date();
+				function createtime() {
+					var grt = new Date("01/01/2020 00:00:00");//此处修改你的建站时间或者网站上线时间 
+					now.setTime(now.getTime() + 250);
+					days = (now - grt) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+					hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+					if (String(hnum).length == 1) { hnum = "0" + hnum; } minutes = (now - grt) / 1000 / 60 - (24 * 60 * dnum) - (60 * hnum);
+					mnum = Math.floor(minutes); if (String(mnum).length == 1) { mnum = "0" + mnum; }
+					seconds = (now - grt) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+					snum = Math.round(seconds); if (String(snum).length == 1) { snum = "0" + snum; }
+					document.getElementById("timeDate").innerHTML = " 已运行 ";
+					document.getElementById("times").innerHTML = dnum + " 天 " + hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+				}
+				setInterval("createtime()", 250);
+			</script>
+			-->
+			
 			<span id="busuanzi_container_site_pv">    总访问量：<span id="busuanzi_value_site_pv"></span> | 
 			</span>
 			<span id="busuanzi_container_site_uv">  总访客数：<span id="busuanzi_value_site_uv"></span>
@@ -591,15 +594,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">英语</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">算法竞赛</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">蓝桥杯2015初赛</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">英语</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -619,6 +622,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">CSS参考手册</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">C</a>
               </li>
              
@@ -631,10 +638,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">CSS参考手册</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">HTML参考手册</a>
               </li>
              
@@ -644,6 +647,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">公告</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">计算机</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">关系图</a>
               </li>
             
             <div class="clearfix"></div>
@@ -788,9 +799,5 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 		
 		}
 </script>
-
-
-
-
 
 </html>

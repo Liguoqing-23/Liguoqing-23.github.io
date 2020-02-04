@@ -21,7 +21,11 @@
   border-bottom: 2px solid;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: rgb(85, 85, 85);
+  border-top-color: initial;
+  border-right-color: initial;
+  border-left-color: initial;
+  border-bottom-color: initial;
+  background-color: rgb(61, 64, 67);
 }
 
 .my-menu-bottom {
@@ -3514,7 +3518,8 @@ pre .css~* .id, pre .id {
   }
   .header-menu li a.active {
     color: #eaeaea;
-    background: #a0a0a0
+    background-image: initial;
+    background-color: rgb(51, 54, 57);
   }
   .profilepic {
     display: block;
