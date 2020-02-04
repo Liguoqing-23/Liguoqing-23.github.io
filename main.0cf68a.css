@@ -2535,7 +2535,7 @@ pre .css~* .id, pre .id {
 }
 
 .article-entry table tbody tr:hover {
-  background: #efefef
+  background: rgb(30, 30, 30);
 }
 
 .article-entry table td, .article-entry table th {
