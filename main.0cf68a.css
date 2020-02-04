@@ -10,7 +10,7 @@
 .my-menu-bottom-show {
   color: rgb(194, 190, 181);;
   position: absolute;
-  top: 0px;
+  top: -27px;
   right: 20px;
   cursor: pointer;
   font-size: 30px;
@@ -26,12 +26,32 @@
   border-left-color: initial;
   border-bottom-color: initial;
   background-color: rgb(61, 64, 67);
+  transition: transform 200ms ease-in-out;
+}
+
+.my-menu-bottom-show:hover {
+  transform: translateY(27px);
+}
+
+@keyframes flash {
+  0% {
+    left: -100%;
+    top: 90%;
+  }
+  50% {
+    left: 10%;
+    top: -30%;
+  }
+  100% {
+    left: -10%;
+    top: -10%;
+  }
 }
 
 .my-menu-bottom {
   position: fixed;
   top: 16px;
-  left: -14px;
+  left: -30px;
   color: white;
   padding-left: 5px;
   padding-right: 5px;
@@ -44,6 +64,10 @@
   border-bottom: 2px solid;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  transition: transform 200ms ease-in-out;
+}
+.my-menu-bottom:hover {
+  transform: rotate(-90deg) translateY(16px);
 }
 
 #timeDate, #times, #wenzhangshu {
@@ -947,10 +971,7 @@ body {
 .left-col #header .profilepic {
   display: block;
   border: 5px solid;
-  border-top-color: rgb(85, 85, 85);
-  border-right-color: rgb(85, 85, 85);
-  border-bottom-color: rgb(85, 85, 85);
-  border-left-color: rgb(85, 85, 85);
+  border-color: rgb(85, 85, 85);
   background-image: initial;
   border-radius: 300px;
   width: 128px;
@@ -959,13 +980,18 @@ body {
   position: relative;
   overflow: hidden;
   background-color: rgb(28, 57, 94);
-  -webkit-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in-out;
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   -webkit-box-pack: center;
   -webkit-box-align: center;
   text-align: center;
 }
+
+/* .left-col #header .profilepic:hover {
+  transition: all .2s ease-in-out;
+  border: rgb(0, 0, 0);
+} */
 
 .left-col #header .profilepic img {
   border-radius: 300px;
@@ -2280,14 +2306,60 @@ pre .css~* .id, pre .id {
 
 .article-more-link a {
   background-image: initial;
-  background-color: rgb(61, 65, 67);
-  color: #fff;
+  /* background-color: rgb(61, 65, 67); */
+  /* color: #fff; */
   font-size: 12px;
   padding: 5px 8px;
   line-height: 16px;
   border-radius: 2px;
   transition: background .3s
 }
+
+/* 以下自己加的 */
+
+.article-more-a {
+  width: 200px;
+  height: 60px;
+  background: none;
+  border: 1px solid;
+  color: rgb(194, 190, 181);
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+
+.article-more-a::before,
+.article-more-a::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: rgb(24, 26, 27);
+  transform: skewX(40deg);
+  transition: .4s linear;
+}
+
+.article-more-a::before {
+  top: -4px;
+  left: 10%;
+}
+
+.article-more-a::after {
+  bottom: -4px;
+  right: 10%;
+}
+
+.article-more-a:hover::before {
+  left: 80%;
+}
+
+.article-more-a:hover::after {
+  right: 80%;
+}
+
+/* 以上自己加的 */
 
 .article-more-link a:hover {
   background: #3c3c3c
