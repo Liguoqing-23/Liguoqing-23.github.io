@@ -11,15 +11,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>1251-蓝桥杯2015初赛-星系炸弹 | 木玉青的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="星系炸弹题目描述在X星系的广袤空间中漂浮着许多X星人造“炸弹”，用来作为宇宙中的路标。每个炸弹都可以设定多少天之后爆炸。比如：阿尔法炸弹2015年1月1日放置，定时为15天，则它在2015年1月16日爆炸。有一个贝塔炸弹，a年b月c日放置，定时为n天，请你计算它爆炸的准确日期。">
+  <meta name="description" content="题目描述在X星系的广袤空间中漂浮着许多X星人造“炸弹”，用来作为宇宙中的路标。每个炸弹都可以设定多少天之后爆炸。比如：阿尔法炸弹2015年1月1日放置，定时为15天，则它在2015年1月16日爆炸。有一个贝塔炸弹，a年b月c日放置，定时为n天，请你计算它爆炸的准确日期。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="1251-蓝桥杯2015初赛-星系炸弹">
 <meta property="og:url" content="http://yoursite.com/2020/01/24/1251-%E8%93%9D%E6%A1%A5%E6%9D%AF2015%E5%88%9D%E8%B5%9B-%E6%98%9F%E7%B3%BB%E7%82%B8%E5%BC%B9/index.html">
 <meta property="og:site_name" content="木玉青的博客">
-<meta property="og:description" content="星系炸弹题目描述在X星系的广袤空间中漂浮着许多X星人造“炸弹”，用来作为宇宙中的路标。每个炸弹都可以设定多少天之后爆炸。比如：阿尔法炸弹2015年1月1日放置，定时为15天，则它在2015年1月16日爆炸。有一个贝塔炸弹，a年b月c日放置，定时为n天，请你计算它爆炸的准确日期。">
+<meta property="og:description" content="题目描述在X星系的广袤空间中漂浮着许多X星人造“炸弹”，用来作为宇宙中的路标。每个炸弹都可以设定多少天之后爆炸。比如：阿尔法炸弹2015年1月1日放置，定时为15天，则它在2015年1月16日爆炸。有一个贝塔炸弹，a年b月c日放置，定时为n天，请你计算它爆炸的准确日期。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-24T15:26:10.000Z">
-<meta property="article:modified_time" content="2020-01-24T16:39:50.831Z">
+<meta property="article:modified_time" content="2020-02-08T11:56:21.816Z">
 <meta property="article:author" content="木玉青">
 <meta property="article:tag" content="算法竞赛">
 <meta property="article:tag" content="蓝桥杯2015初赛">
@@ -222,7 +222,7 @@
 		</nav>
 		
 		<nav id="wenzhangshu">
-			总文章数 61
+			总文章数 38
         </nav>
 
         <nav class="header-nav">
@@ -339,20 +339,18 @@ src="//music.163.com/outchain/player?type=2&id=4872793&auto=0&height=32"></ifram
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="星系炸弹"><a href="#星系炸弹" class="headerlink" title="星系炸弹"></a>星系炸弹</h2><h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>在X星系的广袤空间中漂浮着许多X星人造“炸弹”，用来作为宇宙中的路标。<br>每个炸弹都可以设定多少天之后爆炸。<br>比如：阿尔法炸弹2015年1月1日放置，定时为15天，则它在2015年1月16日爆炸。<br>有一个贝塔炸弹，a年b月c日放置，定时为n天，请你计算它爆炸的准确日期。</p>
+        <h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>在X星系的广袤空间中漂浮着许多X星人造“炸弹”，用来作为宇宙中的路标。<br>每个炸弹都可以设定多少天之后爆炸。<br>比如：阿尔法炸弹<code>2015年1月1日</code>放置，定时为<code>15</code>天，则它在<code>2015年1月16日</code>爆炸。<br>有一个贝塔炸弹，<code>a年b月c日</code>放置，定时为<code>n</code>天，请你计算它爆炸的准确日期。</p>
 <a id="more"></a>
 
 <hr>
-<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>输入存在多组数据，每组数据输入一行，每一行输入四个正整数a,b,c,n<br>输入保证日期在1000-01-01到2020-01-01之间，且日期合法。<br>n不超过1000</p>
+<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>输入存在多组数据，每组数据输入一行，每一行输入四个正整数<code>a,b,c,n</code><br>输入保证日期在<code>1000-01-01</code>到<code>2020-01-01</code>之间，且日期合法。<br>n不超过1000</p>
 <hr>
-<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>请填写该日期，格式为 yyyy-mm-dd 即4位年份2位月份2位日期。比如：2015-02-19<br>请严格按照格式书写。不能出现其它文字或符号。</p>
+<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>请填写该日期，格式为 <code>yyyy-mm-dd</code> 即4位年份2位月份2位日期。比如：<code>2015-02-19</code><br>请严格按照格式书写。不能出现其它文字或符号。</p>
 <hr>
 <h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2015 1 1 15</span><br><span class="line">2014 11 9 1000</span><br></pre></td></tr></table></figure>
 
 <hr>
 <h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">2015-01-16</span><br><span class="line">2017-08-05</span><br></pre></td></tr></table></figure>
-
-
 
 <hr>
 <p><strong>C</strong>++</p>
@@ -449,7 +447,7 @@ src="//music.163.com/outchain/player?type=2&id=4872793&auto=0&height=32"></ifram
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#星系炸弹"><span class="toc-number">1.</span> <span class="toc-text">星系炸弹</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#题目描述"><span class="toc-number">1.0.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输入"><span class="toc-number">1.0.2.</span> <span class="toc-text">输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输出"><span class="toc-number">1.0.3.</span> <span class="toc-text">输出</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#样例输入"><span class="toc-number">1.0.4.</span> <span class="toc-text">样例输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#样例输出"><span class="toc-number">1.0.5.</span> <span class="toc-text">样例输出</span></a></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#题目描述"><span class="toc-number">1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输入"><span class="toc-number">2.</span> <span class="toc-text">输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输出"><span class="toc-number">3.</span> <span class="toc-text">输出</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#样例输入"><span class="toc-number">4.</span> <span class="toc-text">样例输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#样例输出"><span class="toc-number">5.</span> <span class="toc-text">样例输出</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -640,6 +638,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">CSS参考手册</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">HTML参考手册</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">C</a>
               </li>
              
@@ -652,19 +658,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">CSS参考手册</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">记录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">公告</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">HTML参考手册</a>
+                <a href="javascript:void(0)" class="js-tag color3">记录</a>
               </li>
              
               <li class="article-tag-list-item">
