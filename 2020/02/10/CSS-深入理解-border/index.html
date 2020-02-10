@@ -11,15 +11,15 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>CSS-深入理解-border | 木玉青的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、border-width 不支持百分比想一下手机、电脑border的关系就明白了，就是语义上不支持。 什么outline，box-shadow，text-shadow等等。 二、border-width 支持关键字：thin， medium（默认值）、thickthin：1px medium：3px thick：5px 为什么默认是medium而不是thin呢？ 大概原因是 border-st">
+  <meta name="description" content="border的一些奇淫巧计">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CSS-深入理解-border">
 <meta property="og:url" content="http://yoursite.com/2020/02/10/CSS-%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3-border/index.html">
 <meta property="og:site_name" content="木玉青的博客">
-<meta property="og:description" content="一、border-width 不支持百分比想一下手机、电脑border的关系就明白了，就是语义上不支持。 什么outline，box-shadow，text-shadow等等。 二、border-width 支持关键字：thin， medium（默认值）、thickthin：1px medium：3px thick：5px 为什么默认是medium而不是thin呢？ 大概原因是 border-st">
+<meta property="og:description" content="border的一些奇淫巧计">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-02-10T15:11:00.000Z">
-<meta property="article:modified_time" content="2020-02-10T16:43:21.187Z">
+<meta property="article:modified_time" content="2020-02-10T16:46:33.363Z">
 <meta property="article:author" content="木玉青">
 <meta property="article:tag" content="进阶">
 <meta property="article:tag" content="CSS">
@@ -339,7 +339,10 @@ src="//music.163.com/outchain/player?type=2&id=30431486&auto=0&height=32"></ifra
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="一、border-width-不支持百分比"><a href="#一、border-width-不支持百分比" class="headerlink" title="一、border-width 不支持百分比"></a>一、border-width 不支持百分比</h2><p>想一下手机、电脑border的关系就明白了，就是语义上不支持。</p>
+        <p>border的一些奇淫巧计</p>
+<a id="more"></a>
+
+<h2 id="一、border-width-不支持百分比"><a href="#一、border-width-不支持百分比" class="headerlink" title="一、border-width 不支持百分比"></a>一、border-width 不支持百分比</h2><p>想一下手机、电脑border的关系就明白了，就是语义上不支持。</p>
 <p>什么outline，box-shadow，text-shadow等等。</p>
 <h2 id="二、border-width-支持关键字：thin，-medium（默认值）、thick"><a href="#二、border-width-支持关键字：thin，-medium（默认值）、thick" class="headerlink" title="二、border-width 支持关键字：thin， medium（默认值）、thick"></a>二、border-width 支持关键字：thin， medium（默认值）、thick</h2><p><code>thin：1px</code> <code>medium：3px</code> <code>thick：5px</code></p>
 <p>为什么默认是medium而不是thin呢？</p>
@@ -763,18 +766,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">进阶</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">CSS参考手册</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">C</a>
               </li>
              
@@ -787,6 +778,18 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">进阶</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">CSS参考手册</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">HTML参考手册</a>
               </li>
              
@@ -795,15 +798,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">记录</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">计算机</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">关系图</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">记录</a>
               </li>
             
             <div class="clearfix"></div>
