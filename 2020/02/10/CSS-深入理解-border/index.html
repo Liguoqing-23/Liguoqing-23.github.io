@@ -9,15 +9,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: 动态内存分配 | 木玉青的博客</title>
+  <title>CSS-深入理解-border | 木玉青的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="木玉青的博客">
-<meta property="og:url" content="http://yoursite.com/tags/%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D/index.html">
+  <meta name="description" content="一、border-width 不支持百分比想一下手机、电脑border的关系就明白了，就是语义上不支持。 什么outline，box-shadow，text-shadow等等。 二、border-width 支持关键字：thin， medium（默认值）、thickthin：1px medium：3px thick：5px 为什么默认是medium而不是thin呢？ 大概原因是 border-st">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS-深入理解-border">
+<meta property="og:url" content="http://yoursite.com/2020/02/10/CSS-%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3-border/index.html">
 <meta property="og:site_name" content="木玉青的博客">
+<meta property="og:description" content="一、border-width 不支持百分比想一下手机、电脑border的关系就明白了，就是语义上不支持。 什么outline，box-shadow，text-shadow等等。 二、border-width 支持关键字：thin， medium（默认值）、thickthin：1px medium：3px thick：5px 为什么默认是medium而不是thin呢？ 大概原因是 border-st">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-02-10T15:11:00.000Z">
+<meta property="article:modified_time" content="2020-02-10T16:43:21.187Z">
 <meta property="article:author" content="木玉青">
-<meta property="article:tag" content="木玉青">
+<meta property="article:tag" content="进阶">
+<meta property="article:tag" content="CSS">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="木玉青的博客" type="application/atom+xml">
@@ -307,83 +312,315 @@ src="//music.163.com/outchain/player?type=2&id=30431486&auto=0&height=32"></ifra
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-CSS-深入理解-border" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/01/22/C%E8%AF%AD%E8%A8%80-%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E5%92%8C%E5%8F%98%E9%95%BF%E6%95%B0%E7%BB%84/" class="archive-article-date">
-  	<time datetime="2020-01-22T12:21:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-22</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/01/22/C%E8%AF%AD%E8%A8%80-%E5%8A%A8%E6%80%81%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D%E5%92%8C%E5%8F%98%E9%95%BF%E6%95%B0%E7%BB%84/">C语言 动态内存分配和变长数组</a>
+    <h1 class="article-title" itemprop="name">
+      CSS-深入理解-border
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/02/10/CSS-%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3-border/" class="archive-article-date">
+  	<time datetime="2020-02-10T15:11:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-10</time>
+</a>
+            
+    
+        
+          <span class="archive-article-date">
+              阅读量 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        	
+		
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、border-width-不支持百分比"><a href="#一、border-width-不支持百分比" class="headerlink" title="一、border-width 不支持百分比"></a>一、border-width 不支持百分比</h2><p>想一下手机、电脑border的关系就明白了，就是语义上不支持。</p>
+<p>什么outline，box-shadow，text-shadow等等。</p>
+<h2 id="二、border-width-支持关键字：thin，-medium（默认值）、thick"><a href="#二、border-width-支持关键字：thin，-medium（默认值）、thick" class="headerlink" title="二、border-width 支持关键字：thin， medium（默认值）、thick"></a>二、border-width 支持关键字：thin， medium（默认值）、thick</h2><p><code>thin：1px</code> <code>medium：3px</code> <code>thick：5px</code></p>
+<p>为什么默认是medium而不是thin呢？</p>
+<p>大概原因是 <code>border-style: double</code> 至少<code>3px</code>才有效果</p>
+<h2 id="三、各种-border-style-类型"><a href="#三、各种-border-style-类型" class="headerlink" title="三、各种 border-style 类型"></a>三、各种 border-style 类型</h2><ul>
+<li>solid</li>
+</ul>
+<hr>
+<ul>
+<li><p>dashed</p>
+<p>  在不同浏览器中，dashed的虚线比不同</p>
+<p>  在Chrome和FireFox中宽高是3 ：1 虚实比是1 ：1</p>
+<p>  在IE中是2 ：1和2 ：1（垃圾IE）</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>dotted</p>
+<p>  在Chrome和FireFox中是小方</p>
+<p>  在IE中是小圆（IE就是这么特立独行）不过可以利用这一点在I7、iI8中实现圆角</p>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">150px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">150px</span>;</span><br><span class="line">    <span class="attribute">overflow</span>: hidden;<span class="comment">/*超出区域隐藏，只显示一个圆*/</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.dotted</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">150px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">150px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">149px</span> dotted <span class="number">#cd0000</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>  还可以实现任意大小圆角，矩形图对齐覆盖就行。</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>double</p>
+<p>  计算规则：</p>
+<table>
+<thead>
+<tr>
+<th align="right">像素</th>
+<th align="left">规则</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td align="left">0+1+0</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="left">1+0+1</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="left">1+1+1</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="left">1+2+1</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="left">2+1+2</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="left">2+2+2</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="left">2+3+2</td>
+</tr>
+</tbody></table>
+<p>  绘制图形：实现常见下拉菜单的三道杠</p>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">120px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">border-top</span>: <span class="number">60px</span> double;</span><br><span class="line">    <span class="attribute">border-bottom</span>: <span class="number">20px</span> solid;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>inset、outset、groove和ridge</p>
+<p>  一般不用，风格过时、兼容性差。</p>
+</li>
+</ul>
+<h2 id="border-color与color"><a href="#border-color与color" class="headerlink" title="border-color与color"></a>border-color与color</h2><ul>
+<li><p>border-color的默认属性就是color。</p>
+<p>  box-shadow、text-shadow等等都是如此。</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>实现案例：hover与图形变色</p>
+  <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"javascrpt:"</span> <span class="attr">class</span>=<span class="string">"add"</span>&gt;</span><span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>  先看传统实现方式：</p>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.add</span> &#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid <span class="number">#ccc</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.add</span><span class="selector-pseudo">::before</span>, <span class="selector-class">.add</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#ccc</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.add</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">border-color</span>: <span class="number">#06c</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.add</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::before</span>, <span class="selector-class">.add</span><span class="selector-pseudo">:hover</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="number">#06c</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>  这是很麻烦的，再看border的方法：</p>
+  <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.add</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#ccc</span>;</span><br><span class="line">    <span class="attribute">transition</span>: color .<span class="number">25s</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.add</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">    <span class="attribute">border-top</span>: <span class="number">10px</span> solid;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.add</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">10px</span> solid;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.add</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#06c</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>  hover一下就变得简洁了。并且transition也只要一个color属性。</p>
+</li>
+</ul>
+<h2 id="border-与-background-定位"><a href="#border-与-background-定位" class="headerlink" title="border 与 background 定位"></a>border 与 background 定位</h2><ul>
+<li><p>background 定位的局限</p>
+<p>  只能相对左上角数值定位，不能相对于右下角。</p>
+</li>
+</ul>
+<p>解决方法就是border实现,background 的100% 相对于右边缘定位，再在右边留一个透明的边框就可以了。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attribute">border-right</span>: <span class="number">50px</span> solid transparent;</span><br><span class="line">&#125;</span><br><span class="line">&#123;</span><br><span class="line">    <span class="attribute">background-position</span>: <span class="number">100%</span> <span class="number">40px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="border-与三角和梯形图形构建"><a href="#border-与三角和梯形图形构建" class="headerlink" title="border 与三角和梯形图形构建"></a>border 与三角和梯形图形构建</h2><ul>
+<li>三角</li>
+</ul>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.triangle</span> &#123;</span><br><span class="line">    <span class="attribute">border-width</span>: <span class="number">12px</span> <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">border-style</span>: solid;</span><br><span class="line">    <span class="attribute">border-color</span>: red red transparent transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>实现原理：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.triangle</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">10px</span> solid;</span><br><span class="line">    <span class="attribute">border-color</span>: red green blue orange;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>应用场景：很多很多</p>
+<p>高级应用：模拟圆角——上下梯形，中间矩形。</p>
+<h2 id="border-与透明边框——优雅实现响应区域大小"><a href="#border-与透明边框——优雅实现响应区域大小" class="headerlink" title="border 与透明边框——优雅实现响应区域大小"></a>border 与透明边框——优雅实现响应区域大小</h2><ul>
+<li>不使用图片实现单复选框</li>
+</ul>
+<p>一般的复选框区域小，难点。</p>
+<p>改进：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.checkbox</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">2px</span> solid transparent;</span><br><span class="line">    <span class="attribute">box-shadow</span>:inset <span class="number">0</span> <span class="number">1px</span>, inset <span class="number">1px</span> <span class="number">0</span>, inset -<span class="number">1px</span> <span class="number">0</span>, inset <span class="number">0</span> -<span class="number">1px</span>;</span><br><span class="line">    <span class="attribute">background-color</span>: <span class="number">#fff</span>;</span><br><span class="line">    <span class="attribute">background-clip</span>: content-box;</span><br><span class="line">    <span class="attribute">color</span>: <span class="number">#d0d0d5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>边框使用盒阴影，原先border变透明用来增加点击区域。</p>
+<hr>
+<ul>
+<li>增加可视渲染区域</li>
+</ul>
+<p>drop-shadow 可以给 png 图标赋色：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.icon</span> &#123;</span><br><span class="line">    <span class="attribute">filter</span>: <span class="built_in">drop-shadow</span>(<span class="number">20px</span> <span class="number">0</span> #ff8040);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>通过隐藏原始图片实现图标换色。</p>
+<p>然而！</p>
+<p>在Chrome下，页面中不可见元素的Drop-shadow也是不可见的。</p>
+<p>但是！</p>
+<p>透明border可突破可视区域的限制</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.icon</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>:relative;</span><br><span class="line">    <span class="attribute">left</span>: -<span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">border-right</span>: <span class="number">20px</span> solid transparent;</span><br><span class="line">    <span class="attribute">filter</span>: <span class="built_in">drop-shadow</span>(<span class="number">20px</span> <span class="number">0</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="border在布局中的应用"><a href="#border在布局中的应用" class="headerlink" title="border在布局中的应用"></a>border在布局中的应用</h2><ul>
+<li>有限标签下的标题栏</li>
+</ul>
+<hr>
+<ul>
+<li>border等高布局</li>
+</ul>
+<p>原理：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">nav</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h3</span>&gt;</span>导航1<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">nav</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">section</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"module"</span>&gt;</span>模块1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">section</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span> &#123;</span><br><span class="line">    <span class="attribute">border-left</span>: <span class="number">300px</span> solid <span class="number">#222</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.left</span> &#123;</span><br><span class="line">    <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">margin-left</span>: -<span class="number">300px</span>;</span><br><span class="line">    <span class="attribute">float</span>: left;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>局限：不支持百分比宽度。</p>
+<hr>
+<p>这个算是一些技巧吧，是张鑫旭老师讲的，我就当拓展思路了。</p>
+<p>网址是<a href="https://www.imooc.com/learn/755" target="_blank" rel="noopener">CSS深入理解之border</a></p>
+<p>不过老师口音可不小。。。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">C</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">进阶</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">动态内存分配</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">变长数组</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="/categories/C//" class="article-tag-list-link color2">C</a>
+        			<a href="/categories/前端//" class="article-tag-list-link color3">前端</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/C/内存//" class="article-tag-list-link color3">内存</a>
+        			<a href="/categories/前端/CSS//" class="article-tag-list-link color4">CSS</a>
         		</li>
       		
 		</ul>
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/02/08/1260-%E8%93%9D%E6%A1%A5%E6%9D%AF2015%E5%88%9D%E8%B5%9B-%E5%8A%A0%E6%B3%95%E5%8F%98%E4%B9%98%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">1260-蓝桥杯2015初赛-加法变乘法</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、border-width-不支持百分比"><span class="toc-number">1.</span> <span class="toc-text">一、border-width 不支持百分比</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、border-width-支持关键字：thin，-medium（默认值）、thick"><span class="toc-number">2.</span> <span class="toc-text">二、border-width 支持关键字：thin， medium（默认值）、thick</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#三、各种-border-style-类型"><span class="toc-number">3.</span> <span class="toc-text">三、各种 border-style 类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#border-color与color"><span class="toc-number">4.</span> <span class="toc-text">border-color与color</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#border-与-background-定位"><span class="toc-number">5.</span> <span class="toc-text">border 与 background 定位</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#border-与三角和梯形图形构建"><span class="toc-number">6.</span> <span class="toc-text">border 与三角和梯形图形构建</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#border-与透明边框——优雅实现响应区域大小"><span class="toc-number">7.</span> <span class="toc-text">border 与透明边框——优雅实现响应区域大小</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#border在布局中的应用"><span class="toc-number">8.</span> <span class="toc-text">border在布局中的应用</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
 
     
+      <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var notify = 'true' == true ? true : false;
+  var verify = 'true' == true ? true : false;
+  new Valine({
+      // AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: 'uVx4XXoqOCMkBRWrKhG7kk0S-gzGzoHsz',
+      app_key: 'P7J96SM7OnhBklSQIVktxo7a',
+      placeholder: '请输入信息......'
+    });
+</script>
+
+    
+
+
+
+  
+  
+  
+
+  
+
+  
+
+  
+
+	
+  
 
 
           </div>
@@ -434,9 +671,9 @@ src="//music.163.com/outchain/player?type=2&id=30431486&auto=0&height=32"></ifra
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
