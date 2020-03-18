@@ -9,21 +9,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>1266-蓝桥杯2015决赛-穿越雷区 | 木玉青的博客</title>
+  <title>洛谷-P3848-TJOI2007-跳棋 | 木玉青的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="题目描述X星的坦克战车很奇怪，它必须交替地穿越正能量辐射区和负能量辐射区才能保持正常运转，否则将报废。某坦克需要从A区到B区去（A，B区本身是安全区，没有正能量或负能量特征），怎样走才能路径最短？已知的地图是一个方阵，上面用字母标出了A，B区，其它区都标了正号或负号分别表示正负能量辐射区。例如：  A + - + -- + - - +- + + + -+ - + - +B + - + -  坦克车">
+  <meta name="description" content="题目背景在一个n×n的棋盘上，布满了0和1，如图（a）所示（n&#x3D;7），为叙述方便，将0用字母表示，如图（b）。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1266-蓝桥杯2015决赛-穿越雷区">
-<meta property="og:url" content="http://yoursite.com/2020/03/16/1266-%E8%93%9D%E6%A1%A5%E6%9D%AF2015%E5%86%B3%E8%B5%9B-%E7%A9%BF%E8%B6%8A%E9%9B%B7%E5%8C%BA/index.html">
+<meta property="og:title" content="洛谷-P3848-TJOI2007-跳棋">
+<meta property="og:url" content="http://yoursite.com/2020/03/17/%E6%B4%9B%E8%B0%B7-P3848-TJOI2007-%E8%B7%B3%E6%A3%8B/index.html">
 <meta property="og:site_name" content="木玉青的博客">
-<meta property="og:description" content="题目描述X星的坦克战车很奇怪，它必须交替地穿越正能量辐射区和负能量辐射区才能保持正常运转，否则将报废。某坦克需要从A区到B区去（A，B区本身是安全区，没有正能量或负能量特征），怎样走才能路径最短？已知的地图是一个方阵，上面用字母标出了A，B区，其它区都标了正号或负号分别表示正负能量辐射区。例如：  A + - + -- + - - +- + + + -+ - + - +B + - + -  坦克车">
+<meta property="og:description" content="题目背景在一个n×n的棋盘上，布满了0和1，如图（a）所示（n&#x3D;7），为叙述方便，将0用字母表示，如图（b）。">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-03-16T11:22:49.000Z">
-<meta property="article:modified_time" content="2020-03-18T01:31:12.420Z">
+<meta property="og:image" content="https://cdn.luogu.com.cn/upload/pic/6077.png">
+<meta property="article:published_time" content="2020-03-17T11:22:49.000Z">
+<meta property="article:modified_time" content="2020-03-18T01:30:52.940Z">
 <meta property="article:author" content="木玉青">
 <meta property="article:tag" content="算法竞赛">
-<meta property="article:tag" content="蓝桥杯2015初赛">
+<meta property="article:tag" content="洛谷试炼场">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.luogu.com.cn/upload/pic/6077.png">
   
     <link rel="alternative" href="/atom.xml" title="木玉青的博客" type="application/atom+xml">
   
@@ -312,20 +314,20 @@ src="//music.163.com/outchain/player?type=2&id=536624061&auto=0&height=32"></ifr
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-1266-蓝桥杯2015决赛-穿越雷区" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-洛谷-P3848-TJOI2007-跳棋" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      1266-蓝桥杯2015决赛-穿越雷区
+      洛谷-P3848-TJOI2007-跳棋
     </h1>
   
 
         
-        <a href="/2020/03/16/1266-%E8%93%9D%E6%A1%A5%E6%9D%AF2015%E5%86%B3%E8%B5%9B-%E7%A9%BF%E8%B6%8A%E9%9B%B7%E5%8C%BA/" class="archive-article-date">
-  	<time datetime="2020-03-16T11:22:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-16</time>
+        <a href="/2020/03/17/%E6%B4%9B%E8%B0%B7-P3848-TJOI2007-%E8%B7%B3%E6%A3%8B/" class="archive-article-date">
+  	<time datetime="2020-03-17T11:22:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-17</time>
 </a>
             
     
@@ -339,26 +341,41 @@ src="//music.163.com/outchain/player?type=2&id=536624061&auto=0&height=32"></ifr
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>X星的坦克战车很奇怪，它必须交替地穿越正能量辐射区和负能量辐射区才能保持正常运转，否则将报废。<br>某坦克需要从A区到B区去（A，B区本身是安全区，没有正能量或负能量特征），怎样走才能路径最短？<br>已知的地图是一个方阵，上面用字母标出了A，B区，其它区都标了正号或负号分别表示正负能量辐射区。<br>例如：</p>
-<blockquote>
-<p>A + - + -<br>- + - - +<br>- + + + -<br>+ - + - +<br>B + - + -</p>
-</blockquote>
-<p>坦克车只能水平或垂直方向上移动到相邻的区。</p>
+        <h4 id="题目背景"><a href="#题目背景" class="headerlink" title="题目背景"></a>题目背景</h4><p>在一个n×n的棋盘上，布满了0和1，如图（a）所示（n=7），为叙述方便，将0用字母表示，如图（b）。</p>
+<p><img src="https://cdn.luogu.com.cn/upload/pic/6077.png" alt="img"></p>
 <a id="more"></a>
 
 <hr>
-<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>输入第一行是一个整数n，表示方阵的大小， 4&lt;=n&lt;100<br>接下来是n行，每行有n个数据，可能是A，B，+，-中的某一个，中间用空格分开。<br>输入保证A，B都只出现一次。</p>
+<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p><strong>跳棋规则</strong>：</p>
+<p>（1）从某个0格出发，可以向上，下，左，右4个方向连续越过若干个（至少1个）</p>
+<blockquote>
+<p>1格而跳入下一个0格。如图（b）中从A出发，可跳到B，或者到E，但不能直接到K。在跳到B之后还可以继续跳到F;在跳到E之后可继续跳到F或K。直到不能再跳为止。</p>
+</blockquote>
+<p>（2）每个0格只能到达一次，给出的起始点不能再到达，也不能越过。</p>
+<blockquote>
+<p>跳过的距离为跳过1格个数加1，如从A到B，跳过距离为3，从B到F，跳过距离为2。</p>
+</blockquote>
+<p><strong>问 题</strong>： 当棋盘和起始点给出之后，问最远能跳的距离是多少？</p>
+<blockquote>
+<p>如上图（b）中，从A出发，可跳过的路线不止一条，其中一条为：</p>
+<p>A － B － F － L － K － E （可能不唯一）</p>
+<p>3 2 3 3 3</p>
+<p>它的距离为14。</p>
+</blockquote>
 <hr>
-<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>要求输出一个整数，表示坦克从A区到B区的最少移动步数。<br>如果没有方案，则输出-1</p>
+<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>第一行三个整数 <code>n</code>（1≤n≤100），<code>x</code>，<code>y</code>（起点坐标，上图（b）中A处坐标为1，3）</p>
+<p>接下来<code>n</code>行，每行<code>n</code>个数（0或1），数与数之间用一个空格分隔。</p>
 <hr>
-<h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">5</span><br><span class="line">A+-+-</span><br><span class="line">-+--+</span><br><span class="line">-+++-</span><br><span class="line">+-+-+</span><br><span class="line">B+-+-</span><br></pre></td></tr></table></figure>
+<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>一个整数，即最大可跳距离（若不能跳，输出0）。</p>
+<hr>
+<h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">4  3  2</span><br><span class="line">1  0  1  0 </span><br><span class="line">1  1  1  1</span><br><span class="line">0  0  1  0</span><br><span class="line">1  1  0  1</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">10</span><br></pre></td></tr></table></figure>
+<h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">6</span><br></pre></td></tr></table></figure>
 
 <hr>
 <p><strong>C</strong>++</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">char</span> Map[<span class="number">111</span>][<span class="number">111</span>];</span><br><span class="line"><span class="keyword">int</span> color[<span class="number">111</span>][<span class="number">111</span>];</span><br><span class="line"><span class="keyword">int</span> way[<span class="number">4</span>][<span class="number">2</span>] = &#123;</span><br><span class="line">	&#123;<span class="number">-1</span>, <span class="number">0</span>&#125;, &#123;<span class="number">0</span>, <span class="number">1</span>&#125;, &#123;<span class="number">1</span>, <span class="number">0</span>&#125;, &#123;<span class="number">0</span>, <span class="number">-1</span>&#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">int</span> start[<span class="number">2</span>];</span><br><span class="line"><span class="keyword">int</span> len = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> p=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> Min = <span class="number">999999999</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> k, <span class="keyword">int</span> j)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (color[k][j] || Map[k][j]==<span class="string">'@'</span>) <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">	len++;</span><br><span class="line"></span><br><span class="line">	color [k][j] = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> (Map[k][j] == <span class="string">'B'</span>) &#123;</span><br><span class="line">		<span class="keyword">if</span> (Min &gt; len) Min = len<span class="number">-1</span>;</span><br><span class="line">		color [k][j] = <span class="number">0</span>;</span><br><span class="line">		len--;</span><br><span class="line">		<span class="keyword">return</span>; </span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">4</span>; i++) &#123;</span><br><span class="line">		<span class="keyword">int</span> nextx=k+way[i][<span class="number">0</span>], nexty=j+way[i][<span class="number">1</span>];</span><br><span class="line">		<span class="keyword">if</span> (Map[k][j] != Map[nextx][nexty])</span><br><span class="line">			dfs(nextx, nexty);	</span><br><span class="line">	&#125; </span><br><span class="line">	len--;</span><br><span class="line">	color [k][j] = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n;</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">111</span>; i++) <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>; j&lt;<span class="number">111</span>; j++) Map[i][j] = <span class="string">'@'</span>;</span><br><span class="line">	<span class="built_in">memset</span>(color, <span class="number">0</span>, <span class="keyword">sizeof</span>(color));</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;=n; j++) &#123;</span><br><span class="line">			<span class="built_in">cin</span> &gt;&gt; Map[i][j];</span><br><span class="line">			<span class="keyword">if</span> (Map[i][j] == <span class="string">'A'</span>) &#123;</span><br><span class="line">				start[<span class="number">0</span>]=i; start[<span class="number">1</span>]=j;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	dfs(start[<span class="number">0</span>], start[<span class="number">1</span>]);</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; Min;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;cstring&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n, x, y;</span><br><span class="line"><span class="keyword">int</span> Map[<span class="number">111</span>][<span class="number">111</span>];</span><br><span class="line"><span class="keyword">int</span> way[<span class="number">4</span>][<span class="number">2</span>] = &#123;</span><br><span class="line">	&#123;<span class="number">-1</span>, <span class="number">0</span>&#125;, &#123;<span class="number">0</span>, <span class="number">1</span>&#125;, &#123;<span class="number">1</span>, <span class="number">0</span>&#125;, &#123;<span class="number">0</span>, <span class="number">-1</span>&#125;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">int</span> Max=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> MaxMax=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> i, <span class="keyword">int</span> j, <span class="keyword">int</span> maxNow, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">	<span class="comment">//cout &lt;&lt; i &lt;&lt; " a " &lt;&lt; j &lt;&lt; " " &lt;&lt; Map[i][j] &lt;&lt; endl;</span></span><br><span class="line">	<span class="keyword">if</span> (Map[i][j]==<span class="number">-1</span> || Map[i][j]==<span class="number">2</span> || Map[i][j]==<span class="number">3</span>) <span class="keyword">return</span>;</span><br><span class="line">	<span class="keyword">if</span> (Map[i][j]==<span class="number">0</span>) <span class="keyword">return</span>;</span><br><span class="line">	<span class="keyword">if</span> (Map[i][j] == <span class="number">0</span>) Map[i][j] = <span class="number">2</span>;</span><br><span class="line">	<span class="keyword">if</span> (Map[i][j] == <span class="number">1</span>) Map[i][j] = <span class="number">3</span>;</span><br><span class="line">	<span class="keyword">while</span> (<span class="number">1</span>) &#123;</span><br><span class="line">		maxNow++; </span><br><span class="line">		i += way[k][<span class="number">0</span>];</span><br><span class="line">		j += way[k][<span class="number">1</span>];</span><br><span class="line">		<span class="keyword">if</span> (Map[i][j] == <span class="number">-1</span> || Map[i][j] == <span class="number">2</span>) &#123; </span><br><span class="line">			k++;</span><br><span class="line">			<span class="keyword">if</span> (k &gt; <span class="number">3</span>) k=<span class="number">0</span>;</span><br><span class="line">			<span class="keyword">return</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="comment">//cout &lt;&lt; i &lt;&lt; " b " &lt;&lt; j &lt;&lt; " " &lt;&lt; Map[i][j] &lt;&lt; endl;</span></span><br><span class="line">		<span class="keyword">if</span> (Map[i][j] == <span class="number">0</span>) &#123;</span><br><span class="line">			Max += maxNow;</span><br><span class="line">			<span class="keyword">if</span> (MaxMax &lt; Max) MaxMax = Max;</span><br><span class="line">			<span class="comment">//cout &lt;&lt; "MaxMax = " &lt;&lt; MaxMax &lt;&lt; endl;</span></span><br><span class="line">			Map[i][j] = <span class="number">2</span>;</span><br><span class="line">			<span class="keyword">break</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span> (Map[i][j] == <span class="number">1</span>) Map[i][j] = <span class="number">3</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> v=<span class="number">0</span>; v&lt;<span class="number">4</span>; v++) &#123;</span><br><span class="line">		dfs(i+way[v][<span class="number">0</span>], j+way[v][<span class="number">1</span>], <span class="number">1</span>, v);</span><br><span class="line">	&#125;</span><br><span class="line">	Max -= maxNow;</span><br><span class="line">	<span class="keyword">if</span> (Map[i][j] == <span class="number">2</span>) Map[i][j] = <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">if</span> (Map[i][j] == <span class="number">3</span>) Map[i][j] = <span class="number">1</span>;</span><br><span class="line">	<span class="keyword">return</span>;            </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123; </span><br><span class="line">	<span class="built_in">memset</span>(Map, <span class="number">-1</span>, <span class="keyword">sizeof</span>(Map));</span><br><span class="line">	<span class="built_in">cin</span> &gt;&gt; n &gt;&gt; x &gt;&gt; y;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++) <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;=n; j++) <span class="built_in">cin</span> &gt;&gt; Map[i][j];</span><br><span class="line">	Map[x][y] = <span class="number">2</span>;</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;<span class="number">4</span>; i++) &#123;</span><br><span class="line">		<span class="comment">//cout &lt;&lt; "now i is : " &lt;&lt; i &lt;&lt; endl;</span></span><br><span class="line">		Max = <span class="number">0</span>;</span><br><span class="line">		dfs(x+way[i][<span class="number">0</span>], y+way[i][<span class="number">1</span>], <span class="number">1</span>, i);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; MaxMax;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
       
@@ -377,7 +394,7 @@ src="//music.163.com/outchain/player?type=2&id=536624061&auto=0&height=32"></ifr
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">蓝桥杯2015初赛</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">洛谷试炼场</a>
         		</li>
       		
 		</ul>
@@ -393,7 +410,7 @@ src="//music.163.com/outchain/player?type=2&id=536624061&auto=0&height=32"></ifr
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="/categories/算法竞赛/蓝桥杯2015初赛//" class="article-tag-list-link color5">蓝桥杯2015初赛</a>
+        			<a href="/categories/算法竞赛/洛谷试炼场//" class="article-tag-list-link color1">洛谷试炼场</a>
         		</li>
       		
 		</ul>
@@ -411,18 +428,9 @@ src="//music.163.com/outchain/player?type=2&id=536624061&auto=0&height=32"></ifr
   
 <nav id="article-nav">
   
-    <a href="/2020/03/17/%E6%B4%9B%E8%B0%B7-P3848-TJOI2007-%E8%B7%B3%E6%A3%8B/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          洛谷-P3848-TJOI2007-跳棋
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/02/08/1260-%E8%93%9D%E6%A1%A5%E6%9D%AF2015%E5%88%9D%E8%B5%9B-%E5%8A%A0%E6%B3%95%E5%8F%98%E4%B9%98%E6%B3%95/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">1260-蓝桥杯2015初赛-加法变乘法</div>
+    <a href="/2020/03/16/1266-%E8%93%9D%E6%A1%A5%E6%9D%AF2015%E5%86%B3%E8%B5%9B-%E7%A9%BF%E8%B6%8A%E9%9B%B7%E5%8C%BA/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">1266-蓝桥杯2015决赛-穿越雷区</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -449,7 +457,7 @@ src="//music.163.com/outchain/player?type=2&id=536624061&auto=0&height=32"></ifr
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#题目描述"><span class="toc-number">1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输入"><span class="toc-number">2.</span> <span class="toc-text">输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输出"><span class="toc-number">3.</span> <span class="toc-text">输出</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#样例输入"><span class="toc-number">4.</span> <span class="toc-text">样例输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#样例输出"><span class="toc-number">5.</span> <span class="toc-text">样例输出</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#题目背景"><span class="toc-number">1.</span> <span class="toc-text">题目背景</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#题目描述"><span class="toc-number">2.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输入"><span class="toc-number">3.</span> <span class="toc-text">输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#输出"><span class="toc-number">4.</span> <span class="toc-text">输出</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#样例输入"><span class="toc-number">5.</span> <span class="toc-text">样例输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#样例输出"><span class="toc-number">6.</span> <span class="toc-text">样例输出</span></a></li></ol>
                     </div>
                 </span>
             </div>
